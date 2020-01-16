@@ -241,42 +241,29 @@
 </template>
 
 <script>
-// import { $, jQuery } from 'jquery'
-// import { TweenMax, TimelineMax, ScrollToPlugin, CSSPlugin } from 'gsap'
-// import 'gsap/all'
-// import '@/assets/plugins/greensock/TweenMax.min.js'
-// import '@/assets/plugins/greensock/TimelineMax.min.js'
-// import '@/assets/plugins/scrollmagic/ScrollMagic.min.js'
-// import 'parallax-js'
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-// import '@/assets/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'
 import '@/assets/styles/main_styles.css'
 import '@/assets/styles/responsive.css'
-// require('progressbar')
-// if (process.client) {
-//   require('scrollmagic')
-//   require('jquery.easing')(jQuery)
-//   require('malihu-custom-scrollbar-plugin')($)
-//   require('@/assets/js/custom.js')($)
-// }
 export default {
   head () {
     return {
       script: [
-        { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' },
-        { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js' },
-        { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineMax.min.js' },
-        { src: 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js' },
-        { src: 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js' },
-        { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js' },
-        { src: 'https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.0.9/jquery.mCustomScrollbar.min.js' },
-        { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js' },
-        { src: 'https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js' }
+        { src: '/js/jquery-3.2.1.min.js' },
+        { src: '/plugins/greensock/TweenMax.min.js' },
+        { src: '/plugins/greensock/TimelineMax.min.js' },
+        { src: '/plugins/scrollmagic/ScrollMagic.min.js' },
+        { src: '/plugins/greensock/animation.gsap.min.js' },
+        { src: '/plugins/greensock/ScrollToPlugin.min.js' },
+        { src: '/plugins/progressbar/progressbar.js' },
+        { src: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' },
+        { src: '/plugins/easing/easing.js' },
+        { src: '/plugins/parallax-js-master/parallax.min.js' },
+        { src: '/js/custom.js' }
       ],
       link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto&display=swap' }
+        { rel: 'stylesheet', href: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css' }
       ]
     }
   },
