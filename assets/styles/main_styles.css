@@ -203,7 +203,7 @@ section
 }
 .super_container
 {
-	width: 100vw;
+	width: auto;
 	height: auto;
 	padding-left: 40px;
 	padding-bottom: 45px;

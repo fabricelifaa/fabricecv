@@ -10,18 +10,11 @@
         class="main_nav d-flex flex-row align-items-end justify-content-start"
       >
         <ul class="d-flex flex-row align-items-center justify-content-start">
-          <li class="active">
-            <nuxt-link to="/">
-              About
+          <li v-for="menu in menus" :key="menu.key" :class="activeMenu == menu.key ? 'active' : ''">
+            <nuxt-link :to="menu.key">
+              {{ menu.name }}
             </nuxt-link>
           </li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="header_button ml-auto">
           <a href="#">Available for freelance work</a>
@@ -42,18 +35,11 @@
           </div>
           <div class="menu_nav text-right">
             <ul>
-              <li>
-                <nuxt-link to="/">
-                  About
+              <li v-for="menu in menus" :key="menu.key" :class="activeMenu == menu.key ? 'active' : ''">
+                <nuxt-link :to="menu.key">
+                  {{ menu.name }}
                 </nuxt-link>
               </li>
-              <li><a href="skills.html">Skills</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="experience.html">Experience</a></li>
-              <li><a href="education.html">Education</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -61,3 +47,15 @@
     </div>
   </header>
 </template>
+<script>
+export default {
+  computed: {
+    menus () {
+      return this.$store.state.menu.menus
+    },
+    activeMenu () {
+      return this.$store.state.menu.activeMenu
+    }
+  }
+}
+</script>
