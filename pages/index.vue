@@ -31,18 +31,8 @@
               </div>
               <div class="about_text">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus vitae sapien porttitor, dignissim quam sit amet,
-                  aliquam lorem. Fusce id ligula non risus mollis consectetur.
-                  Nam lobortis, erat quis pulvinar dignissim, velit ligula
-                  ullamcorper ipsum, at sodales elit odio at velit. Sed a est a
-                  quam mattis suscipit. Proin et faucibus diam. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit. Phasellus vitae
-                  sapien porttitor, dignissim quam sit amet, aliquam lorem.
-                  Fusce id ligula non risus mollis consectetur. Nam lobortis,
-                  erat quis pulvinar dignissim, velit ligula ullamcorper ipsum,
-                  at sodales elit odio at velit. Sed a est a quam mattis
-                  suscipit.
+                  Iam a back-end developer with a lot of experience in my ﬁeld and full of resources in Front-end and other areas of computer science.
+                  I have agreat spirit of creativity, dynamism and willingness to carry out the tasks entrusted to me inashort time.
                 </p>
               </div>
 
@@ -51,14 +41,14 @@
               <div class="loaders clearfix">
                 <!-- Loader -->
                 <div class="loader_container">
-                  <div class="loader" data-perc="0.75" />
+                  <div class="loader" data-perc="0.80" />
                   <div class="loader_content text-center">
                     <div class="loader_title">
                       intuition
                     </div>
-                    <div class="loader_subtitle">
+                    <!-- <div class="loader_subtitle">
                       Etiam nec odio vestibulum est.
-                    </div>
+                    </div> -->
                   </div>
                 </div>
 
@@ -69,22 +59,21 @@
                     <div class="loader_title">
                       creativity
                     </div>
-                    <div class="loader_subtitle">
+                    <!-- <div class="loader_subtitle">
                       Odio vestibulum est mattis.
-                    </div>
+                    </div> -->
                   </div>
                 </div>
 
                 <!-- Loader -->
                 <div class="loader_container">
-                  <div class="loader" data-perc="0.25" />
+                  <div class="loader" data-perc="0.30" />
                   <div class="loader_content text-center">
                     <div class="loader_title">
                       pure luck
                     </div>
-                    <div class="loader_subtitle">
-                      Vestibulum est mattis effic.
-                    </div>
+                    <!-- <div class="loader_subtitle">
+                    </div> -->
                   </div>
                 </div>
 
@@ -95,9 +84,9 @@
                     <div class="loader_title">
                       awesomeness
                     </div>
-                    <div class="loader_subtitle">
+                    <!-- <div class="loader_subtitle">
                       Vestibulum est mattis effic.
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>

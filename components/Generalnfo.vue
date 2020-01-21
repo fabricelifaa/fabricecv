@@ -45,7 +45,7 @@
               <img src="~assets/images/icon_marker.png" alt="">
             </div>
             <div class="general_info_text">
-              Location: <span>London UK</span>
+              Location: <span>Benin</span>
             </div>
           </li>
           <li
@@ -57,7 +57,7 @@
               <img src="~assets/images/icon_2.png" alt="">
             </div>
             <div class="general_info_text">
-              Date of Birth: <span>August 25, 1991</span>
+              Date of Birth: <span>July 12, 1996</span>
             </div>
           </li>
           <li
@@ -70,8 +70,8 @@
             </div>
             <div class="general_info_text">
               <a
-                href="mailto:contact@linque.com?subject=Job_Inquiry"
-              >contactme@templatename.com</a>
+                href="mailto:fabfly95@gmaill.com?subject=Job_Inquiry"
+              >fabfly95@gmaill.com</a>
             </div>
           </li>
           <li
@@ -83,7 +83,9 @@
               <img src="~assets/images/icon_4.png" alt="">
             </div>
             <div class="general_info_text">
-              +76 6524 567862 763
+              <a href="tel:+22997104183">
+                +229 971 041 83
+              </a>
             </div>
           </li>
           <li
@@ -96,8 +98,8 @@
             </div>
             <div class="general_info_text">
               <a
-                href="mailto:contact@linque.com"
-              >www.mytemplatename.com</a>
+                href="mailto:contact@fabrootdev.com"
+              >www.fabrootdev.com</a>
             </div>
           </li>
         </ul>
@@ -110,22 +112,17 @@
             <li>
               <a
                 href="#"
-              ><i class="fa fa-google-plus" aria-hidden="true" /></a>
+              ><i class="fa fa-github" aria-hidden="true" /></a>
             </li>
             <li>
               <a
                 href="#"
-              ><i class="fa fa-pinterest" aria-hidden="true" /></a>
+              ><i class="fa fa-stack-overflow" aria-hidden="true" /></a>
             </li>
             <li>
               <a
                 href="#"
-              ><i class="fa fa-facebook" aria-hidden="true" /></a>
-            </li>
-            <li>
-              <a
-                href="#"
-              ><i class="fa fa-twitter" aria-hidden="true" /></a>
+              ><i class="fa fa-linkedin" aria-hidden="true" /></a>
             </li>
           </ul>
         </div>

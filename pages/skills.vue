@@ -24,11 +24,10 @@
               <div class="skills_text">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-xl-6">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur. Nam lobortis, erat quis pulvinar dignissim, velit ligula ullamcorper ipsum, at sodales elit odio at velit.</p>
-                    </div>
-                    <div class="col-xl-6">
-                      <p>Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur. Nam lobortis, erat quis pulvinar dignissim, velit ligula ullamcorper ipsum, at sodales elit odio at velit. Sed a est a quam mattis suscipit. Proin et faucibus diam.</p>
+                    <div class="col-xl-12">
+                      <p>
+                        Give satisfaction to people through my work. J'ai 2 ans d'experience en tant que developper back-end, pendant ces 2 ans j'ai pu acquerir plus d'astuces pour parfaire mon travail et découvrir plein de nouvelle technologie.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -42,12 +41,12 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Developement
+                          Php, Wordpress, Codeigniter
                         </div>
                         <div
                           id="skill_1_pbar"
                           class="skill_bars"
-                          data-perc="0.70"
+                          data-perc="0.95"
                           data-name="skill_1_pbar"
                           data-color-start="#79ccff"
                           data-color-end="#9b74ff"
@@ -59,12 +58,12 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Developement
+                          Nodejs, Vuejs, Javascript
                         </div>
                         <div
                           id="skill_2_pbar"
                           class="skill_bars"
-                          data-perc="0.60"
+                          data-perc="0.75"
                           data-name="skill_2_pbar"
                           data-color-start="#ff4646"
                           data-color-end="#ff26d9"
@@ -76,12 +75,12 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Developement
+                          SQL and NoSQL
                         </div>
                         <div
                           id="skill_3_pbar"
                           class="skill_bars"
-                          data-perc="0.75"
+                          data-perc="0.70"
                           data-name="skill_3_pbar"
                           data-color-start="#0054ff"
                           data-color-end="#ff23d3"
@@ -93,12 +92,12 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Developement
+                          Python, Flask, Django
                         </div>
                         <div
                           id="skill_4_pbar"
                           class="skill_bars"
-                          data-perc="1.0"
+                          data-perc="0.45"
                           data-name="skill_4_pbar"
                           data-color-start="#79ff7c"
                           data-color-end="#ffbd4a"
@@ -110,12 +109,12 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Developement
+                          Linux administration
                         </div>
                         <div
                           id="skill_5_pbar"
                           class="skill_bars"
-                          data-perc="0.90"
+                          data-perc="0.60"
                           data-name="skill_5_pbar"
                           data-color-start="#79ff8f"
                           data-color-end="#7b74ff"
@@ -127,15 +126,32 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Developement
+                          Cryptocurrency, Blockchain
                         </div>
                         <div
                           id="skill_6_pbar"
                           class="skill_bars"
-                          data-perc="1.0"
+                          data-perc="0.80"
                           data-name="skill_6_pbar"
                           data-color-start="#ff2d72"
                           data-color-end="#ffab79"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="col-xl-4 col-lg-6 pb_col">
+                      <div class="pb_item">
+                        <div class="p_bar_title">
+                          PWA, APIs
+                        </div>
+                        <div
+                          id="skill_7_pbar"
+                          class="skill_bars"
+                          data-perc="0.60"
+                          data-name="skill_7_pbar"
+                          data-color-start="#79ff8f"
+                          data-color-end="#7b74ff"
                         />
                       </div>
                     </div>
@@ -144,60 +160,6 @@
               </div>
 
               <!-- Milestones -->
-
-              <div class="milestones clearfix">
-                <!-- Milestone -->
-                <div class="milestone text-center">
-                  <div class="milestone_icon">
-                    <img src="images/icon_6.png" alt="">
-                  </div>
-                  <div class="milestone_counter" data-end-value="14">
-                    0
-                  </div>
-                  <div class="milestone_text">
-                    Years of Experience
-                  </div>
-                </div>
-
-                <!-- Milestone -->
-                <div class="milestone text-center">
-                  <div class="milestone_icon">
-                    <img src="images/icon_7.png" alt="">
-                  </div>
-                  <div class="milestone_counter" data-end-value="1000" data-sign-before="+">
-                    0
-                  </div>
-                  <div class="milestone_text">
-                    Happy Clients
-                  </div>
-                </div>
-
-                <!-- Milestone -->
-                <div class="milestone text-center">
-                  <div class="milestone_icon">
-                    <img src="images/icon_8.png" alt="">
-                  </div>
-                  <div class="milestone_counter" data-end-value="14" data-sign-after="k">
-                    0
-                  </div>
-                  <div class="milestone_text">
-                    Followers on FB
-                  </div>
-                </div>
-
-                <!-- Milestone -->
-                <div class="milestone text-center">
-                  <div class="milestone_icon">
-                    <img src="images/icon_9.png" alt="">
-                  </div>
-                  <div class="milestone_counter" data-end-value="732">
-                    0
-                  </div>
-                  <div class="milestone_text">
-                    Finished Projects
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
