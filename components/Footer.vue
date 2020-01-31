@@ -1,5 +1,14 @@
 <template>
   <div align="center">
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+    Copyright &copy; {{ getCurrentYear () }} All rights reserved
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    getCurrentYear () {
+      return new Date().getFullYear()
+    }
+  }
+}
+</script>

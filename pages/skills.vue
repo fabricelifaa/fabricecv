@@ -41,7 +41,7 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Php, Wordpress, Codeigniter
+                          Php, Codeigniter
                         </div>
                         <div
                           id="skill_1_pbar"
@@ -58,7 +58,7 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Nodejs, Vuejs, Javascript
+                          Nodejs, Vuejs, Js
                         </div>
                         <div
                           id="skill_2_pbar"
@@ -92,7 +92,7 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Python, Flask, Django
+                          Python, Flask
                         </div>
                         <div
                           id="skill_4_pbar"
@@ -126,12 +126,12 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Cryptocurrency, Blockchain
+                          Blockchain
                         </div>
                         <div
                           id="skill_6_pbar"
                           class="skill_bars"
-                          data-perc="0.80"
+                          data-perc="0.70"
                           data-name="skill_6_pbar"
                           data-color-start="#ff2d72"
                           data-color-end="#ffab79"
@@ -143,13 +143,30 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          PWA, APIs
+                          Wordpress
                         </div>
                         <div
                           id="skill_7_pbar"
                           class="skill_bars"
-                          data-perc="0.60"
+                          data-perc="0.95"
                           data-name="skill_7_pbar"
+                          data-color-start="#79ccff"
+                          data-color-end="#9b74ff"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="col-xl-4 col-lg-6 pb_col">
+                      <div class="pb_item">
+                        <div class="p_bar_title">
+                          PWA, APIs
+                        </div>
+                        <div
+                          id="skill_8_pbar"
+                          class="skill_bars"
+                          data-perc="0.60"
+                          data-name="skill_8_pbar"
                           data-color-start="#79ff8f"
                           data-color-end="#7b74ff"
                         />
