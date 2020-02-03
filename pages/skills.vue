@@ -26,7 +26,7 @@
                   <div class="row">
                     <div class="col-xl-12">
                       <p>
-                        Give satisfaction to people through my work. J'ai 2 ans d'experience en tant que developper back-end, pendant ces 2 ans j'ai pu acquerir plus d'astuces pour parfaire mon travail et découvrir plein de nouvelle technologie.
+                        Give satisfaction to people through my work. J'ai 2 ans d'experience en tant que developper back-end, pendant ces 2 ans j'ai pu acquerir grace à ma capacité à apprendre rapidement plus d'astuces pour parfaire mon travail et découvrir plein de nouvelle technologie.
                       </p>
                     </div>
                   </div>
@@ -143,7 +143,7 @@
                     <div class="col-xl-4 col-lg-6 pb_col">
                       <div class="pb_item">
                         <div class="p_bar_title">
-                          Wordpress
+                          Wordpress (Plugins, API)
                         </div>
                         <div
                           id="skill_7_pbar"

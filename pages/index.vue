@@ -32,7 +32,7 @@
               <div class="about_text">
                 <p>
                   Iam a back-end developer with a lot of experience in my ﬁeld and full of resources in Front-end and other areas of computer science.
-                  I have agreat spirit of creativity, dynamism and willingness to carry out the tasks entrusted to me inashort time.
+                  I have agreat spirit of creativity, dynamism and willingness to carry out the tasks entrusted to me inashort time. Comme loisir j'aime les jeux vidéo, le baskeball, la lecture, les films, les voyages, manga et surtout la music c'est essentiel :-).
                 </p>
               </div>
 

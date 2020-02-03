@@ -124,6 +124,11 @@
                 href="#"
               ><i class="fa fa-linkedin" aria-hidden="true" /></a>
             </li>
+            <li>
+              <a
+                href="https://wa.me/22995603348"
+              ><i class="fa fa-whatsapp" aria-hidden="true" /></a>
+            </li>
           </ul>
         </div>
       </div>

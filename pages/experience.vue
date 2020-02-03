@@ -13,7 +13,7 @@
         <div class="main_content">
           <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
             <div class="main_subtitle">
-              What I am good at
+              <!-- What I am good at -->
             </div>
             <div class="main_title">
               My Experience
@@ -27,20 +27,20 @@
               <div class="exp_item d-flex flex-md-row flex-column align-items-start justify-content-start">
                 <div>
                   <div class="exp_time">
-                    2016-Present
+                    03 / 2019 - Present
                   </div>
                 </div>
                 <div class="exp_content">
                   <div class="exp_title_container">
                     <div class="exp_title">
-                      Senior Developer
+                      Senior Back-end Developer
                     </div>
                     <div class="exp_subtitle">
-                      Company INC
+                      Kamgoko Technology
                     </div>
                   </div>
                   <div class="exp_text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit ame. Proin vitae tortor nec risus tristique efficitur. Aliquam luctus est urna, id aliquam orci tempus sed. Aenean sit amet leo id enim dapibus eleifend. Phasellus ut erat dapibus, tempor sapien non, porta urna.</p>
+                    <p>J'ai eu à développer plusieurs plugins et api wordpress, j'ai aussi travaillé en groupe avec d'autres développeur pour la mise en place d'une API de gestion de campagne par sms basée sur nodejs et vuejs pour l'interface d'administration, J'ai aussi eu à apporter des modifications sur plusieurs des applications Web à l'aide de vuejs.</p>
                   </div>
                 </div>
               </div>
@@ -49,20 +49,20 @@
               <div class="exp_item d-flex flex-md-row flex-column align-items-start justify-content-start">
                 <div>
                   <div class="exp_time">
-                    2014-2016
+                    11 / 18 - 03 / 19
                   </div>
                 </div>
                 <div class="exp_content">
                   <div class="exp_title_container">
                     <div class="exp_title">
-                      Junior Developer
+                      Junior Developer Fullstack (professional internship)
                     </div>
                     <div class="exp_subtitle">
-                      Company INC
+                      Ministry of Life and Sustainable Development
                     </div>
                   </div>
                   <div class="exp_text">
-                    <p>Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit ame. Proin vitae tortor nec risus tristique efficitur. Aliquam luctus est urna, id aliquam orci tempus sed. Aenean sit amet leo id enim dapibus eleifend. Phasellus ut erat dapibus, tempor sapien non, porta urna.</p>
+                    <p>J'ai créer une apllication web pour la gestion des rapports de chaque semaine. J'ai aussi réalisé quelque cover pour les évenements annexes du ministère (eco-citoyens) à l'aide de inkscape. J'ai aussi assisté au déploiement d'interphone cisco.</p>
                   </div>
                 </div>
               </div>
@@ -71,20 +71,20 @@
               <div class="exp_item d-flex flex-md-row flex-column align-items-start justify-content-start">
                 <div>
                   <div class="exp_time">
-                    2012-2014
+                    2018 - Present
                   </div>
                 </div>
                 <div class="exp_content">
                   <div class="exp_title_container">
                     <div class="exp_title">
-                      Entry Level Developer
+                      Webmaster (remote)
                     </div>
                     <div class="exp_subtitle">
-                      Company INC
+                      Afrihit group
                     </div>
                   </div>
                   <div class="exp_text">
-                    <p>Consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit ame. Proin vitae tortor nec risus tristique efficitur. Aliquam luctus est urna, id aliquam orci tempus sed. Aenean sit amet leo id enim dapibus eleifend. Phasellus ut erat dapibus, tempor sapien non, porta urna.</p>
+                    <p>J'ai refait le site Afrihit avec php pour gérer les téléchargements de musique, j'ai aussi fait certains des covers utilisé sur le site Afrihit.</p>
                   </div>
                 </div>
               </div>
@@ -93,42 +93,20 @@
               <div class="exp_item d-flex flex-md-row flex-column align-items-start justify-content-start">
                 <div>
                   <div class="exp_time">
-                    2011-2012
+                    02 / 2018 - 07 / 2018
                   </div>
                 </div>
                 <div class="exp_content">
                   <div class="exp_title_container">
                     <div class="exp_title">
-                      Entry Level Developer
+                      Entry Level Developer (academic internship)
                     </div>
                     <div class="exp_subtitle">
-                      Company INC
+                      Mify Sarl
                     </div>
                   </div>
                   <div class="exp_text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit ame. Proin vitae tortor nec risus tristique efficitur. Aliquam luctus est urna, id aliquam orci tempus sed. Aenean sit amet leo id enim dapibus eleifend. Phasellus ut erat dapibus, tempor sapien non, porta urna.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Experience Item -->
-              <div class="exp_item d-flex flex-md-row flex-column align-items-start justify-content-start">
-                <div>
-                  <div class="exp_time">
-                    2010-2011
-                  </div>
-                </div>
-                <div class="exp_content">
-                  <div class="exp_title_container">
-                    <div class="exp_title">
-                      Entry Level Developer
-                    </div>
-                    <div class="exp_subtitle">
-                      Company INC
-                    </div>
-                  </div>
-                  <div class="exp_text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit ame. Proin vitae tortor nec risus tristique efficitur. Aliquam luctus est urna, id aliquam orci tempus sed. Aenean sit amet leo id enim dapibus eleifend. Phasellus ut erat dapibus, tempor sapien non, porta urna.</p>
+                    <p>I implemented a web platform to display data that will be transmitted by sensor swith the Flask framework.</p>
                   </div>
                 </div>
               </div>
