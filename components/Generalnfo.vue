@@ -111,12 +111,12 @@
           >
             <li>
               <a
-                href="#"
+                href="https://github.com/fabricelifaa"
               ><i class="fa fa-github" aria-hidden="true" /></a>
             </li>
             <li>
               <a
-                href="#"
+                href="https://stackoverflow.com/users/10085581/fabrice-fabiyi"
               ><i class="fa fa-stack-overflow" aria-hidden="true" /></a>
             </li>
             <li>

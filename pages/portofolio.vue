@@ -154,7 +154,7 @@ export default {
         { src: '/plugins/Isotope/isotope.pkgd.min.js' },
         { src: '/plugins/Isotope/fitcolumns.js' },
         { src: '/plugins/parallax-js-master/parallax.min.js' },
-        { src: 'js/education.js' }
+        { src: 'js/portfolio.js' }
       ],
       link: [
         { rel: 'stylesheet', href: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css' }

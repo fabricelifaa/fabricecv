@@ -167,7 +167,7 @@
                     </div>
                   </div>
                   <div class="edu_text">
-                    <p><a href="#">View certificate</a></p>
+                    <p><a href="https://openclassrooms.com/fr/course-certificates/5794690373" target="_blank">View certificate</a></p>
                   </div>
                 </div>
               </div>
@@ -194,7 +194,7 @@
                     </div>
                   </div>
                   <div class="edu_text">
-                    <p><a href="#">View certificate</a></p>
+                    <p><a href="https://openclassrooms.com/fr/course-certificates/8718166086" target="_blank">View certificate</a></p>
                   </div>
                 </div>
               </div>
@@ -208,6 +208,8 @@
   </div>
 </template>
 <script>
+// https://openclassrooms.com/fr/course-certificates/1513349388 boostrap
+// https://openclassrooms.com/fr/course-certificates/1177241947 api
 import { mapMutations } from 'vuex'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
