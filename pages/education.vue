@@ -32,7 +32,7 @@
                 </div>
                 <div>
                   <div class="edu_image">
-                    <img src="~assets/images/edu_1.png" alt="">
+                    <img src="~assets/images/escae.jpg" alt="">
                   </div>
                 </div>
                 <div class="edu_content">
@@ -59,7 +59,7 @@
                 </div>
                 <div>
                   <div class="edu_image">
-                    <img src="~assets/images/edu_2.png" alt="">
+                    <img src="~assets/images/edu-hat.png" alt="">
                   </div>
                 </div>
                 <div class="edu_content">
@@ -86,7 +86,7 @@
                 </div>
                 <div>
                   <div class="edu_image">
-                    <img src="~assets/images/edu_3.png" alt="">
+                    <img src="~assets/images/edu-hat.png" alt="">
                   </div>
                 </div>
                 <div class="edu_content">
@@ -122,26 +122,53 @@
               <div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
                 <div>
                   <div class="edu_year">
-                    2018
+                    2019
                   </div>
                 </div>
                 <div>
                   <div class="edu_image">
-                    <img src="~assets/images/edu_1.png" alt="">
+                    <img src="~assets/images/OpenClassrooms.png" alt="openclassroom logo">
                   </div>
                 </div>
                 <div class="edu_content">
                   <div class="edu_title_container">
                     <div class="edu_title">
-                      Openclassroom
+                      OPENCLASSROOM
                     </div>
                     <div class="edu_subtitle">
-                      B.Sc. in Computer System and Software
+                      Bootstrap
                     </div>
                   </div>
-                  <!-- <div class="edu_text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit ame. Proin vitae tortor nec risus tristique efficitur. Aliquam luctus est urna, id aliquam orci tempus sed. Aenean sit amet leo id enim dapibus eleifend. Phasellus ut erat dapibus, tempor sapien non, porta urna.</p>
-                  </div> -->
+                  <div class="edu_text">
+                    <p><a href="https://openclassrooms.com/fr/course-certificates/1513349388" target="_blank">View certificate</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- certifications Item -->
+              <div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
+                <div>
+                  <div class="edu_year">
+                    2019
+                  </div>
+                </div>
+                <div>
+                  <div class="edu_image">
+                    <img src="~assets/images/OpenClassrooms.png" alt="openclassroom logo">
+                  </div>
+                </div>
+                <div class="edu_content">
+                  <div class="edu_title_container">
+                    <div class="edu_title">
+                      OPENCLASSROOM
+                    </div>
+                    <div class="edu_subtitle">
+                      Use REST APIs in your web projects
+                    </div>
+                  </div>
+                  <div class="edu_text">
+                    <p><a href="https://openclassrooms.com/fr/course-certificates/1177241947" target="_blank">View certificate</a></p>
+                  </div>
                 </div>
               </div>
 
@@ -154,7 +181,7 @@
                 </div>
                 <div>
                   <div class="edu_image">
-                    <img src="~assets/images/edu_2.png" alt="">
+                    <img src="~assets/images/OpenClassrooms.png" alt="openclassroom logo">
                   </div>
                 </div>
                 <div class="edu_content">
@@ -181,7 +208,7 @@
                 </div>
                 <div>
                   <div class="edu_image">
-                    <img src="~assets/images/edu_3.png" alt="">
+                    <img src="~assets/images/OpenClassrooms.png" alt="openclassroom logo">
                   </div>
                 </div>
                 <div class="edu_content">
@@ -208,8 +235,6 @@
   </div>
 </template>
 <script>
-// https://openclassrooms.com/fr/course-certificates/1513349388 boostrap
-// https://openclassrooms.com/fr/course-certificates/1177241947 api
 import { mapMutations } from 'vuex'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'

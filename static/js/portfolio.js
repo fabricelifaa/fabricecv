@@ -120,7 +120,8 @@ $(document).ready(function()
     {
     	if($('.grid').length)
     	{
-    		$('.grid').isotope({
+			var grid = $('.grid')
+    		grid.isotope({
 	  			itemSelector: '.grid-item',
 	  			percentPosition: true,
 	  			masonry:
