@@ -13,9 +13,9 @@
 
         <div class="main_content">
           <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
-            <div class="main_subtitle">
+            <!-- <div class="main_subtitle">
               What I am good at
-            </div>
+            </div> -->
             <div class="main_title">
               My Portfolio
             </div>
@@ -27,14 +27,14 @@
               <li class="portfolio_category active is-checked" data-filter="*">
                 All
               </li>
-              <li class="portfolio_category" data-filter=".p_design">
-                Design
+              <li class="portfolio_category" data-filter=".p_web">
+                Websites
               </li>
-              <li class="portfolio_category" data-filter=".p_photography">
-                Photography
+              <li class="portfolio_category" data-filter=".p_graphic">
+                Graphic design
               </li>
-              <li class="portfolio_category" data-filter=".p_brand">
-                Brand Identity
+              <li class="portfolio_category" data-filter=".p_api">
+                Api project and wordpress plugins
               </li>
             </ul>
           </div>
@@ -42,11 +42,11 @@
           <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
             <div class="portfolio_grid grid clearfix">
               <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_design">
-                <img src="~assets/images/portfolio_1.jpg" alt="">
+              <div class="grid-item portfolio_item p_web">
+                <img src="~assets/images/fresh2.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="portfolio_item_title">
-                    Design
+                    Fresh MTN
                   </div>
                   <div class="portfolio_item_link">
                     <a href="#">See More</a>
@@ -55,11 +55,11 @@
               </div>
 
               <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_photography">
-                <img src="~assets/images/portfolio_2.jpg" alt="">
+              <div class="grid-item portfolio_item p_api">
+                <img src="~assets/images/blank2.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="portfolio_item_title">
-                    Photography
+                    Blank Page MyMTN
                   </div>
                   <div class="portfolio_item_link">
                     <a href="#">See More</a>
@@ -68,11 +68,12 @@
               </div>
 
               <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_brand">
-                <img src="~assets/images/portfolio_3.jpg" alt="">
+              <div class="grid-item portfolio_item p_api">
+                <img src="~assets/images/MTN_brand.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                  <div class="portfolio_item_title">
-                    Brand Identity
+                  <div class="portfolio_item_title text-center">
+                    Page builder for<br>
+                    MTN Website theme
                   </div>
                   <div class="portfolio_item_link">
                     <a href="#">See More</a>
@@ -81,11 +82,11 @@
               </div>
 
               <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_design">
-                <img src="~assets/images/portfolio_4.jpg" alt="">
+              <div class="grid-item portfolio_item p_web">
+                <img src="~assets/images/e-survey1.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="portfolio_item_title">
-                    Design
+                    E-survey
                   </div>
                   <div class="portfolio_item_link">
                     <a href="#">See More</a>
@@ -94,11 +95,11 @@
               </div>
 
               <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_photography">
-                <img src="~assets/images/portfolio_5.jpg" alt="">
+              <div class="grid-item portfolio_item p_web">
+                <img src="~assets/images/ewsb.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="portfolio_item_title">
-                    Photography
+                    WSB
                   </div>
                   <div class="portfolio_item_link">
                     <a href="#">See More</a>
@@ -107,11 +108,37 @@
               </div>
 
               <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_brand">
-                <img src="~assets/images/portfolio_6.jpg" alt="">
+              <div class="grid-item portfolio_item p_web">
+                <img src="~assets/images/tekfoods.png" alt="">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="portfolio_item_title">
-                    Brand Identity
+                    TekFoods
+                  </div>
+                  <div class="portfolio_item_link">
+                    <a href="#">See More</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Portfolio Item -->
+              <div class="grid-item portfolio_item p_web">
+                <img src="~assets/images/afrihit.jpg" alt="">
+                <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+                  <div class="portfolio_item_title">
+                    AFRIHIT
+                  </div>
+                  <div class="portfolio_item_link">
+                    <a href="#">See More</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Portfolio Item -->
+              <div class="grid-item portfolio_item p_web">
+                <img src="~assets/images/ministere2.png" alt="">
+                <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+                  <div class="portfolio_item_title">
+                    Project Management
                   </div>
                   <div class="portfolio_item_link">
                     <a href="#">See More</a>
