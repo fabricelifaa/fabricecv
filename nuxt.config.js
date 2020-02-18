@@ -28,7 +28,9 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/portofolio.js' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

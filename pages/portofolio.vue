@@ -39,7 +39,7 @@
             </ul>
           </div>
 
-          <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
+          <div class="main_content_scroll" data-mcs-theme="minimal-dark">
             <div class="portfolio_grid grid clearfix">
               <!-- Portfolio Item -->
               <div class="grid-item portfolio_item p_web">
