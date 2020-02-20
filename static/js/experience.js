@@ -39,10 +39,10 @@ $(document).ready(function()
 				closeMenu();
 			}
 		}
-		setTimeout(function()
-		{
-			jQuery(".main_content_scroll").mCustomScrollbar("update");
-		}, 375);
+		// setTimeout(function()
+		// {
+		// 	jQuery(".main_content_scroll").mCustomScrollbar("update");
+		// }, 375);
 	});
 
 	$(document).on('scroll', function()

@@ -114,7 +114,7 @@
               My Certifications
             </div>
           </div>
-          <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
+          <div class="main_content_scroll" data-mcs-theme="minimal-dark">
             <!-- Certifications -->
 
             <div class="education">
