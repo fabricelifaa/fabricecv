@@ -49,7 +49,7 @@
               <div class="exp_item d-flex flex-md-row flex-column align-items-start justify-content-start">
                 <div>
                   <div class="exp_time">
-                    11 / 18 - 03 / 19
+                    11 / 2018 - 03 / 2019
                   </div>
                 </div>
                 <div class="exp_content">

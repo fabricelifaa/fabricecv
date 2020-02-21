@@ -6,23 +6,23 @@ export const state = () => ({
     },
     {
       name: 'Skills',
-      key: 'skills'
+      key: '/skills'
     },
     {
       name: 'Experience',
-      key: 'experience'
+      key: '/experience'
     },
     {
       name: 'Education',
-      key: 'education'
+      key: '/education'
     },
     {
       name: 'Portofolio',
-      key: 'portofolio'
+      key: '/portofolio'
     },
     {
       name: 'Contact',
-      key: 'contact'
+      key: '/contact'
     }
   ],
   activeMenu: ''

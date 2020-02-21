@@ -27,7 +27,8 @@
     "jquery": "^3.4.1",
     "nuxt": "^2.0.0",
     "pg": "^7.18.1",
-    "stylelint-config-standard": "^19.0.0"
+    "stylelint-config-standard": "^19.0.0",
+    "v-owl-carousel": "^1.0.8"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
