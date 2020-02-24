@@ -239,7 +239,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image:url(~assets/images/smith.jpg);
+	background-image:url(~assets/images/fab.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -681,7 +681,7 @@ section
 }
 .owl-carousel .owl-stage-outer
 {
-	overflow: visible;
+	overflow: hidden;
 }
 .test_slider_container
 {
@@ -731,28 +731,33 @@ section
 	visibility: visible;
 	opacity: 1;
 }
-.test_title
-{
-	font-size: 20px;
-	font-weight: 700;
-	color: #100f3a;
-}
-.test_text
-{
-	margin-top: 24px;
-}
+
 .test_image
 {
-	width: 53px;
-	height: 53px;
-	border-radius: 50%;
-	overflow: hidden;
-	margin-top: 42px;
+	height: 500px;
 }
 .test_image img
 {
 	max-width: 100%;
 }
+
+.description_content {
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+
+.description_title
+{
+	font-size: 30px;
+	font-weight: 700;
+	color: #100f3a;
+}
+
+.description_text
+{
+	margin-top: 31px;
+}
+
 .test_info
 {
 	font-size: 15px;

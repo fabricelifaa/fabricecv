@@ -13,11 +13,10 @@
 
         <div class="main_content">
           <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
-            <div class="main_subtitle">
-              What clients say
-            </div>
+            <!-- <div class="main_subtitle">
+            </div> -->
             <div class="main_title">
-              Testimonials
+              {{ portofolio.title }}
             </div>
           </div>
           <div class="main_content_scroll" data-mcs-theme="minimal-dark">
@@ -27,152 +26,56 @@
               <!-- Testimonials Slider -->
               <client-only>
                 <div class="test_slider_container">
-                  <carousel :autoplay="true" :loop="true">
+                  <carousel
+                    :autoplay="false"
+                    :loop="true"
+                    :dots="true"
+                    :nav="false"
+                    :margin="30"
+                    :items="3"
+                    :responsive="{
+                      0:{items:1},
+                      900:{items:2},
+                      1199:{items:1},
+                      1440:{items:2},
+                      1680:{items:3}
+                    }"
+                  >
                     <!-- Slide -->
-                    <!-- <div class="owl-item test_item">
-                      <div class="test_title">
-                        5* Functionality
-                      </div>
-                      <div class="test_text">
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-                      </div>
+                    <div class="test_item">
                       <div class="test_image">
-                        <a href="#"><img src="~assets/images/test_1.jpg" alt=""></a>
-                      </div>
-                      <div class="test_info">
-                        <a href="#">Diane Smith</a><span>Customer</span>
+                        <img src="~assets/images/blank2.png">
                       </div>
                     </div>
 
-                    <div class="owl-item test_item">
-                      <div class="test_title">
-                        Fast & Friendly Guy
-                      </div>
-                      <div class="test_text">
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-                      </div>
+                    <div class="test_item">
                       <div class="test_image">
-                        <a href="#"><img src="~assets/images/test_2.jpg" alt=""></a>
-                      </div>
-                      <div class="test_info">
-                        <a href="#">Diane Smith</a><span>Customer</span>
+                        <img src="~assets/images/blank2.png">
                       </div>
                     </div>
 
-                    <div class="owl-item test_item">
-                      <div class="test_title">
-                        Great to work with
-                      </div>
-                      <div class="test_text">
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-                      </div>
+                    <div class="test_item">
                       <div class="test_image">
-                        <a href="#"><img src="~assets/images/test_3.jpg" alt=""></a>
-                      </div>
-                      <div class="test_info">
-                        <a href="#">Diane Smith</a><span>Customer</span>
+                        <img src="~assets/images/blank2.png">
                       </div>
                     </div>
-
-                    <div class="owl-item test_item">
-                      <div class="test_title">
-                        5* Functionality
-                      </div>
-                      <div class="test_text">
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-                      </div>
-                      <div class="test_image">
-                        <a href="#"><img src="~assets/images/test_1.jpg" alt=""></a>
-                      </div>
-                      <div class="test_info">
-                        <a href="#">Diane Smith</a><span>Customer</span>
-                      </div>
-                    </div>
-
-                    <div class="owl-item test_item">
-                      <div class="test_title">
-                        Fast & Friendly Guy
-                      </div>
-                      <div class="test_text">
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-                      </div>
-                      <div class="test_image">
-                        <a href="#"><img src="~assets/images/test_2.jpg" alt=""></a>
-                      </div>
-                      <div class="test_info">
-                        <a href="#">Diane Smith</a><span>Customer</span>
-                      </div>
-                    </div>
-
-                    <div class="owl-item test_item">
-                      <div class="test_title">
-                        Great to work with
-                      </div>
-                      <div class="test_text">
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-                      </div>
-                      <div class="test_image">
-                        <a href="#"><img src="~assets/images/test_3.jpg" alt=""></a>
-                      </div>
-                      <div class="test_info">
-                        <a href="#">Diane Smith</a><span>Customer</span>
-                      </div>
-                    </div>
-
-                    <div class="owl-item test_item">
-                      <div class="test_title">
-                        5* Functionality
-                      </div>
-                      <div class="test_text">
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-                      </div>
-                      <div class="test_image">
-                        <a href="#"><img src="~assets/images/test_1.jpg" alt=""></a>
-                      </div>
-                      <div class="test_info">
-                        <a href="#">Diane Smith</a><span>Customer</span>
-                      </div>
-                    </div>
-
-                    <div class="owl-item test_item">
-                      <div class="test_title">
-                        Fast & Friendly Guy
-                      </div>
-                      <div class="test_text">
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-                      </div>
-                      <div class="test_image">
-                        <a href="#"><img src="~assets/images/test_2.jpg" alt=""></a>
-                      </div>
-                      <div class="test_info">
-                        <a href="#">Diane Smith</a><span>Customer</span>
-                      </div>
-                    </div>
-
-                    <div class="owl-item test_item">
-                      <div class="test_title">
-                        Great to work with
-                      </div>
-                      <div class="test_text">
-                        <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit.</p>
-                      </div>
-                      <div class="test_image">
-                        <a href="#"><img src="~assets/images/test_3.jpg" alt=""></a>
-                      </div>
-                      <div class="test_info">
-                        <a href="#">Diane Smith</a><span>Customer</span>
-                      </div>
-                    </div> -->
-                    <img src="https://placeimg.com/200/200/any?1">
-
-                    <img src="https://placeimg.com/200/200/any?2">
-
-                    <img src="https://placeimg.com/200/200/any?3">
-
-                    <img src="https://placeimg.com/200/200/any?4">
                   </carousel>
                 </div>
               </client-only>
+            </div>
+
+            <!-- Description -->
+
+            <div class="description_content">
+              <div class="description_title">
+                Description
+              </div>
+              <div class="description_text">
+                <p>
+                  I am a back-end developer with a lot of experience in my ﬁeld and full of resources in Front-end and other areas of computer science.
+                  I have agreat spirit of creativity, dynamism and willingness to carry out the tasks entrusted to me inashort time. As hobbies I like video games, basketball, reading, movies, traveling, manga and especially music is essential 😉.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -184,7 +87,6 @@
 </template>
 <script>
 import { mapMutations } from 'vuex'
-// import Portofolio from '~/plugins/Portofolio.js'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Generalnfo from '@/components/Generalnfo'
@@ -211,21 +113,22 @@ export default {
         { src: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' },
         { src: '/plugins/easing/easing.js' },
         { src: '/plugins/parallax-js-master/parallax.min.js' },
-        // { src: '/plugins/OwlCarousel2-2.2.1/owl.carousel.js' },
         { src: '/js/testimonials.js' }
       ],
       link: [
         { rel: 'stylesheet', href: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css' }
-        // { rel: 'stylesheet', href: '/plugins/OwlCarousel2-2.2.1/owl.carousel.css' },
-        // { rel: 'stylesheet', href: '/plugins/OwlCarousel2-2.2.1/owl.theme.default.css' },
-        // { rel: 'stylesheet', href: '/plugins/OwlCarousel2-2.2.1/animate.css' }
       ]
     }
   },
   // eslint-disable-next-line vue/order-in-components
-  asyncData (data) {
-    // data = { nouveau: Portofolio.getUser() }
-    return { nouveau: 'hii' }
+  async asyncData ({ params, error, $axios }) {
+    const data = await $axios.$get(`http://localhost:4000/api/v1/portofolio/${params.id}`)
+    if (data.success) {
+      return { portofolio: data.data }
+    } else {
+      // eslint-disable-next-line nuxt/no-this-in-fetch-data
+      error({ statusCode: 404, message: 'Portofolio not found' })
+    }
   }
 }
 </script>

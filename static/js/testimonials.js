@@ -52,7 +52,7 @@ $(document).ready(function()
 	});
 
 	initMenu();
-	initSlider();
+	// initSlider();
 
 	/* 
 

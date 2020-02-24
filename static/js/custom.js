@@ -112,7 +112,7 @@ $(document).ready(function () {
 		    		reverse: false
 		    	})
 		    	.on('start', function () {
-		    		const bar = new ProgressBar.Circle(loader,
+		    		const circlecl = new ProgressBar.Circle(loader,
               {
                 color: '#8583e1',
                 // This has to be the same size as the maximum width to
@@ -122,10 +122,10 @@ $(document).ready(function () {
                 trailColor: '#e5e6e8',
                 easing: 'easeInOut',
                 duration: 1400,
-            //     text:
-						// {
-						//   autoStyleContainer: false
-						// },
+                text:
+						{
+						  autoStyleContainer: false
+						},
                 from: { color: '#8583e1', width: 1 },
                 to: { color: '#8583e1', width: 1 },
                 // Set default step function for all animate calls
@@ -133,20 +133,21 @@ $(document).ready(function () {
                   circle.path.setAttribute('stroke', state.color)
                   circle.path.setAttribute('stroke-width', state.width)
 
-                  // const value = Math.round(circle.value() * 100)
-                  // if (value === 0) {
-                  //   circle.setText('0%')
-                  // } else {
-                  //   circle.setText(value + '%')
-                  // }
+                  const value = Math.round(circle.value() * 100)
+                  if (value === 0) {
+                    circle.setText('0%')
+                  } else {
+                    circle.setText(value + '%')
+                  }
                 }
               })
-            // bar.text.style.fontFamily = '"Montserrat", sans-serif'
-            // bar.text.style.fontSize = '44px'
-            // bar.text.style.fontWeight = '700'
-            // bar.text.style.color = '#100f3a'
+            circlecl.text.style.fontFamily = '"Montserrat", sans-serif'
+            circlecl.text.style.fontSize = '44px'
+            circlecl.text.style.fontWeight = '700'
+            circlecl.text.style.color = '#100f3a'
+            circlecl.text.style.top = '50% !important'
 
-            bar.animate(endValue) // Number from 0.0 to 1.0
+            circlecl.animate(endValue) // Number from 0.0 to 1.0
 		    	})
 			    .addTo(ctrl)
       })

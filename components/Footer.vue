@@ -1,5 +1,5 @@
 <template>
-  <div align="center">
+  <div align="center" style="padding-top: 30px;">
     Copyright &copy; {{ getCurrentYear () }} All rights reserved
   </div>
 </template>

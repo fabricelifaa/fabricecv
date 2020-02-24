@@ -323,6 +323,9 @@
 	{
 		font-size: 18px;
 	}
+	.test_image {
+		height: 400px;
+	}
 }
 
 /************
@@ -340,7 +343,9 @@
 
 @media only screen and (max-width: 480px)
 {
-	
+	.test_image {
+		height: 350px;
+	}
 }
 
 /************
@@ -358,5 +363,7 @@
 
 @media only screen and (max-width: 400px)
 {
-	
+	.test_image {
+		height: 350px;
+	}
 }

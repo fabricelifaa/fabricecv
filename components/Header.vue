@@ -4,7 +4,7 @@
       class="header_content d-flex flex-row align-items-center justify-content-start"
     >
       <div class="logo">
-        Smith<span>.</span>CV
+        Fabroot<span>dev</span>
       </div>
       <div
         class="main_nav d-flex flex-row align-items-end justify-content-start"
