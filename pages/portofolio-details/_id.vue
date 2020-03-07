@@ -122,7 +122,7 @@ export default {
   },
   // eslint-disable-next-line vue/order-in-components
   async asyncData ({ params, error, $axios }) {
-    const data = await $axios.$get(`http://localhost:4000/api/v1/portofolio/${params.id}`)
+    const data = await $axios.$get(`http://64.227.43.157:4000/api/v1/portofolio/${params.id}`)
     if (data.success) {
       return { portofolio: data.data }
     } else {
