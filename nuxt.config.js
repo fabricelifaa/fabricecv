@@ -1,3 +1,4 @@
+// import session from 'express-session'
 module.exports = {
   mode: 'universal',
   /*
@@ -54,6 +55,18 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv'
   ],
+  // serverMiddleware: [
+  //   // session middleware
+  //   session({
+  //     secret: 'super-secret-key',
+  //     resave: false,
+  //     saveUninitialized: false,
+  //     cookie: {
+  //       maxAge: 60000
+  //     }
+  //   }),
+  //   '~/api'
+  // ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
