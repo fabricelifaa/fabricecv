@@ -144,9 +144,8 @@ $(document).ready(function () {
             circlecl.text.style.fontFamily = '"Montserrat", sans-serif'
             circlecl.text.style.fontSize = '44px'
             circlecl.text.style.fontWeight = '700'
-            circlecl.text.style.color = '#100f3a'
             circlecl.text.style.top = '50% !important'
-
+            circlecl.text.style.color = '#100f3a'
             circlecl.animate(endValue) // Number from 0.0 to 1.0
 		    	})
 			    .addTo(ctrl)
