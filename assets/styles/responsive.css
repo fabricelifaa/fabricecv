@@ -272,6 +272,9 @@
 	{
 		bottom: -310px;
 	}
+	.header.scrolled .logo span {
+		display: none;
+	}
 	.hamburger
 	{
 		right: 15px;
