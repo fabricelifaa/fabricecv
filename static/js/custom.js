@@ -122,10 +122,10 @@ $(document).ready(function () {
                 trailColor: '#e5e6e8',
                 easing: 'easeInOut',
                 duration: 1400,
-                text:
-						{
-						  autoStyleContainer: false
-						},
+            //     text:
+						// {
+						//   autoStyleContainer: true
+						// },
                 from: { color: '#8583e1', width: 1 },
                 to: { color: '#8583e1', width: 1 },
                 // Set default step function for all animate calls
@@ -135,17 +135,17 @@ $(document).ready(function () {
 
                   const value = Math.round(circle.value() * 100)
                   if (value === 0) {
-                    circle.setText('0%')
+                    // circle.setText('0%')
                   } else {
-                    circle.setText(value + '%')
+                    // circle.setText(value + '%')
                   }
                 }
               })
-            circlecl.text.style.fontFamily = '"Montserrat", sans-serif'
-            circlecl.text.style.fontSize = '44px'
-            circlecl.text.style.fontWeight = '700'
-            circlecl.text.style.top = '50% !important'
-            circlecl.text.style.color = '#100f3a'
+            // circlecl.text.style.fontFamily = '"Montserrat", sans-serif'
+            // circlecl.text.style.fontSize = '44px'
+            // circlecl.text.style.fontWeight = '700'
+            // circlecl.text.style.top = `50%!important`
+            // circlecl.text.style.color = '#100f3a'
             circlecl.animate(endValue) // Number from 0.0 to 1.0
 		    	})
 			    .addTo(ctrl)

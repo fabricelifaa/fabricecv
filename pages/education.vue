@@ -19,7 +19,7 @@
               My Education
             </div>
           </div>
-          <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
+          <div class="main_content_scroll" data-mcs-theme="minimal-dark">
             <!-- Education -->
 
             <div class="education">

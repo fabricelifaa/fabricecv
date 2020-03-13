@@ -17,7 +17,7 @@
     </div>
     <div class="general_info_content">
       <div
-        class="general_info_content_inner mCustomScrollbar"
+        class="general_info_content_inner"
         data-mcs-theme="minimal-dark"
       >
         <div class="general_info_title">
