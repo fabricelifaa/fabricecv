@@ -202,7 +202,7 @@
 {
 	.logo
 	{
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.general_info_image
 	{
@@ -265,7 +265,7 @@
 	}
 	.logo
 	{
-		font-size: 24px;
+		font-size: 20px;
 	}
 	.menu
 	{
@@ -276,6 +276,9 @@
 	.header.scrolled .menu.active
 	{
 		bottom: -310px;
+	}
+	.header.scrolled .logo span {
+		display: none;
 	}
 	.hamburger
 	{
