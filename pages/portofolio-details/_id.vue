@@ -124,7 +124,12 @@ export default {
   async asyncData ({ params, error, $axios }) {
     const data = await $axios.$get(`http://64.227.43.157:4000/api/v1/portofolio/${params.id}`)
     if (data.success) {
-      return { portofolio: data.data }
+      return new Promise((resolve) => {
+      // eslint-disable-next-line nuxt/no-timing-in-fetch-data
+        setTimeout(function () {
+          resolve({ portofolio: data.data })
+        }, 1000)
+      })
     } else {
       // eslint-disable-next-line nuxt/no-this-in-fetch-data
       error({ statusCode: 404, message: 'Portofolio not found' })
