@@ -112,6 +112,14 @@ export default {
     Footer,
     Generalnfo
   },
+  asyncData () {
+    return new Promise((resolve) => {
+      // eslint-disable-next-line nuxt/no-timing-in-fetch-data
+      setTimeout(function () {
+        resolve({})
+      }, 1000)
+    })
+  },
   methods: {
     ...mapMutations({
       setActive: 'menu/setActive'

@@ -532,7 +532,7 @@ section
 	font-size: 92px;
 	font-weight: 800;
 	color: #100f3a;
-	line-height: 0.75;
+	line-height: 0.83;
 	margin-top: 12px;
 }
 .about_content
@@ -581,6 +581,10 @@ section
 	height: 195px;
 	margin: 0 auto;
 	background: transparent;
+}
+
+.loader .progressbar-text {
+	top: 50% !important;
 }
 .loader_content
 {

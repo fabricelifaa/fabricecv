@@ -644,7 +644,7 @@ section
 	font-size: 72px;
 	font-weight: 800;
 	color: #100f3a;
-	line-height: 0.75;
+	line-height: 0.83;
 	margin-top: 15px;
 	margin-left: -4px;
 }
@@ -700,7 +700,7 @@ section
 	font-size: 24px;
 	font-weight: 700;
 	color: #100f3a;
-	line-height: 0.9;
+	line-height: 1.07;
 }
 .exp_subtitle
 {
