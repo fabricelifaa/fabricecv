@@ -29,18 +29,18 @@ export const state = () => ({
 })
 
 export const mutations = {
-  add (state, text) {
-    state.menus.push({
-      text,
-      done: false
-    })
-  },
-  remove (state, { menu }) {
-    state.menus.splice(state.menus.indexOf(menu), 1)
-  },
-  toggle (state, menu) {
-    menu.done = !menu.done
-  },
+  // add (state, text) {
+  //   state.menus.push({
+  //     text,
+  //     done: false
+  //   })
+  // },
+  // remove (state, { menu }) {
+  //   state.menus.splice(state.menus.indexOf(menu), 1)
+  // },
+  // toggle (state, menu) {
+  //   menu.done = !menu.done
+  // },
   setActive (state, menu) {
     state.activeMenu = menu
   }

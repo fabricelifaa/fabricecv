@@ -30,22 +30,22 @@
                       <p>Connection au compte admin</p>
                     </div>
                     <div class="contact_form_container">
-                      <form id="contact_form" v-on:submit.prevent="submitform()" class="contact_form clearfix">
+                      <form id="contact_form" @submit="submitform" class="contact_form clearfix">
                         <div>
                           <input
                             id="username"
-                            v-model="userdata.username"
+                            v-model="username"
                             type="text"
                             class="contact_input"
                             placeholder="Username"
-                            required="required"
                           >
                         </div>
-                        <div><input v-model="userdata.pass" type="password" class="contact_input" placeholder="Password" required="required"></div>
+                        <div><input v-model="pass" type="password" class="contact_input" placeholder="Password"></div>
                         <button class="contact_button">
                           Login
                         </button>
                       </form>
+                      {{ test }}
                     </div>
                   </div>
                 </div>
@@ -61,7 +61,7 @@
 </template>
 <script>
 import { mapMutations } from 'vuex'
-import $ from 'jquery'
+// import $ from 'jquery'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Generalnfo from '@/components/Generalnfo'
@@ -73,26 +73,19 @@ export default {
     Footer,
     Generalnfo
   },
-  asyncData () {
-    return new Promise((resolve) => {
-      // eslint-disable-next-line nuxt/no-timing-in-fetch-data
-      setTimeout(function () {
-        resolve({
-          userdata: {
-            username: '',
-            pass: null
-          }
-        })
-      }, 1000)
-    })
+  data () {
+    return {
+      username: '',
+      pass: null
+    }
   },
   methods: {
     ...mapMutations({
       setActive: 'menu/setActive'
     }),
-    submitform: () => {
-      alert(this.userdata.username)
-      $('#username').val('')
+    submitform: (e) => {
+      e.preventDefault()
+      alert(this.test)
     }
   },
   head () {
