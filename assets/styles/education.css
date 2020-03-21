@@ -77,6 +77,21 @@ p a
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
+
+p #copy_name
+{
+	display: inline;
+	position: relative;
+	color: inherit;
+	border-bottom: solid 1px #ffa07f;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	font-weight: normal;
+}
+
 p:last-of-type
 {
 	margin-bottom: 0;
@@ -99,6 +114,20 @@ p a:hover
 	background: #ffa07f;
 }
 p a:hover::after
+{
+	opacity: 0.2;
+}
+p #copy_name:active
+{
+	position: relative;
+	color: #FF6347;
+}
+p #copy_name:hover
+{
+	color: #FFFFFF;
+	background: #ffa07f;
+}
+p #copy_name:hover::after
 {
 	opacity: 0.2;
 }
@@ -667,7 +696,14 @@ section
 {
 	margin-top: 0;
 }
-
+.notice-msg {
+	margin-top: 30px;
+}
+.notice-msg span {
+	/* font-size: 18px; */
+	font-weight: bold;
+	color: red;
+}
 /*********************************
 5.1 Education
 *********************************/

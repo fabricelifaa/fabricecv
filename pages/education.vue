@@ -113,6 +113,10 @@
             <div class="main_title">
               My Certifications
             </div>
+            <p class="notice-msg">
+              <span>*</span> Copier et coller mon nom dans le champs demander par openclassroom afin d'affiché le certificat. Cliquer ici pour Copier <span id="copy_name" @click="copyToClipboard">Fabiyi</span>
+              <input id="textcopied" type="hidden" value="">
+            </p>
           </div>
           <div class="main_content_scroll" data-mcs-theme="minimal-dark">
             <!-- Certifications -->
@@ -236,6 +240,7 @@
 </template>
 <script>
 import { mapMutations } from 'vuex'
+import $ from 'jquery'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Generalnfo from '@/components/Generalnfo'
@@ -258,7 +263,15 @@ export default {
   methods: {
     ...mapMutations({
       setActive: 'menu/setActive'
-    })
+    }),
+    copyToClipboard: () => {
+      $('#textcopied').val($('#copy_name').text())
+      const copiedText = document.getElementById('textcopied')
+      copiedText.select()
+      // copiedText.setSelectionRange(0, 99999)
+      document.execCommand('copy')
+      alert(copiedText.value)
+    }
   },
   head () {
     return {
