@@ -15,7 +15,7 @@
               What clients say
             </div>
             <div class="main_title">
-              Login
+              Contact me
             </div>
           </div>
           <div class="main_content_scroll" data-mcs-theme="minimal-dark">
@@ -27,28 +27,26 @@
                   <!-- Contact Form -->
                   <div class="col-xl-6">
                     <div class="contact_text">
-                      <p>Connection au compte admin</p>
+                      <p>Pour tout vos travaux de création de site web et besoins de developpeur back-end n'hésitéz pas a me contactez directement en remplissant le formulaire ci-dessous ou en écrivant sur mon mail ou numéro.</p>
                     </div>
-                    <transition name="fade" mode="out-in">
-                      <div id="error-container" v-bind:class="[loginError ? '' : 'd-none']" class="contact_text bg-danger text-center">
-                        <p>{{ loginErrorMsg }}</p>
-                      </div>
-                    </transition>
                     <div class="contact_form_container">
-                      <form id="contact_form" @submit="submitform" class="contact_form clearfix">
+                      <form id="contact_form" action="#" class="contact_form clearfix" enctype="multipart/form-data">
+                        <div><input type="text" class="contact_input" placeholder="Name" required="required" name="portofolio_title"></div>
+                        <textarea class="contact_input contact_textarea" placeholder="Description" required="required" name="portofolio_desc" />
                         <div>
                           <input
-                            id="username"
-                            @change="hideErrorContainer"
-                            v-model="username"
-                            type="text"
+                            @change="uploadFiles"
+                            type="file"
                             class="contact_input"
-                            placeholder="Username"
+                            placeholder="Files"
+                            required="required"
+                            multiple
+                            name="portofolio_images"
                           >
+                          <input type="hidden" name="images[]">
                         </div>
-                        <div><input v-model="pass" type="password" class="contact_input" placeholder="Password"></div>
                         <button class="contact_button">
-                          Login
+                          Add
                         </button>
                       </form>
                     </div>
@@ -66,7 +64,6 @@
 </template>
 <script>
 import { mapMutations } from 'vuex'
-import $ from 'jquery'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Generalnfo from '@/components/Generalnfo'
@@ -78,45 +75,23 @@ export default {
     Footer,
     Generalnfo
   },
-  data () {
-    return {
-      username: '',
-      pass: null,
-      loginError: false,
-      loginErrorMsg: 'Connection failed check your login'
-    }
+  asyncData () {
+    return new Promise((resolve) => {
+      // eslint-disable-next-line nuxt/no-timing-in-fetch-data
+      setTimeout(function () {
+        resolve({})
+      }, 1000)
+    })
   },
-  middleware: 'loginness',
+  middleware: 'auth',
   methods: {
     ...mapMutations({
       setActive: 'menu/setActive'
     }),
-    hideErrorContainer () {
-      $('#error-container').addClass('d-none')
-    },
-    async submitform (e) {
-      e.preventDefault()
-      await this.$axios({
-        url: 'http://localhost:4000/api/v1/login',
-        method: 'post',
-        data: {
-          username: this.username,
-          password: this.pass
-        },
-        withCredentials: false,
-        headers: { 'Access-Control-Allow-Origin': '*' }
-      })
-        .then((response) => {
-          if (response.data.status) {
-            this.$store.commit('setSession', response.data.token)
-            this.$nuxt.$router.replace({ path: '/portofolio/new' })
-          } else {
-            this.loginError = true
-            setTimeout(() => {
-              this.loginError = false
-            }, 5000)
-          }
-        })
+    uploadFiles () {
+      // eslint-disable-next-line no-console
+      console.log(this.$store.state.sessionKey)
+      // const porto = await this.$axios.$get(`http://64.227.43.157:4000/api/v1/portofolio/1`)
     }
   },
   head () {

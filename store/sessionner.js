@@ -1,9 +1,6 @@
 export const state = () => ({
   isLogged: false,
-  sessionKey: '',
-  logoutRoute: {
-    name: 'Logout'
-  }
+  sessionKey: ''
 })
 
 export const mutations = {

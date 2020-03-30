@@ -812,3 +812,8 @@ section
 	width: 100%;
 	height: calc(100% + 30px);
 }
+#error-container p
+{
+	color: white !important;
+	font-weight: bold !important;
+}

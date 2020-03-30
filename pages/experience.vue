@@ -140,6 +140,11 @@ export default {
       }, 1000)
     })
   },
+  pageTransition: {
+    name: 'slide-right',
+    mode: 'in-out',
+    duration: 3000
+  },
   methods: {
     ...mapMutations({
       setActive: 'menu/setActive'
