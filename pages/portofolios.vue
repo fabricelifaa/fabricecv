@@ -1,7 +1,7 @@
 <template>
   <div class="super_container">
     <!-- Header -->
-    {{ setActive('portofolio') }}
+    {{ setActive('/portofolio') }}
     <Header />
 
     <div class="content_container">
@@ -40,108 +40,18 @@
           </div>
 
           <div class="main_content_scroll" data-mcs-theme="minimal-dark">
-            <div class="portfolio_grid grid clearfix">
+            <div v-for="(portofolio) in portofolios" class="portfolio_grid grid clearfix">
               <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_web">
-                <img src="~assets/images/fresh2.png" alt="">
+              <div :class="portofolio.portofolio_type" class="grid-item portfolio_item">
+                <img v-if="checkObject(portofolio.images)" :src="portofolio.images[0]" :alt="shortDesc(portofolio.descriptions) ">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="portfolio_item_title">
-                    Fresh MTN
+                    {{ portofolio.title }}
                   </div>
                   <div class="portfolio_item_link">
-                    <a href="#">See More</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_api">
-                <img src="~assets/images/blank2.png" alt="">
-                <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                  <div class="portfolio_item_title">
-                    Blank Page MyMTN
-                  </div>
-                  <div class="portfolio_item_link">
-                    <a href="#">See More</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_api">
-                <img src="~assets/images/MTN_brand.png" alt="">
-                <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                  <div class="portfolio_item_title text-center">
-                    Page builder for<br>
-                    MTN Website theme
-                  </div>
-                  <div class="portfolio_item_link">
-                    <a href="#">See More</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_web">
-                <img src="~assets/images/e-survey1.png" alt="">
-                <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                  <div class="portfolio_item_title">
-                    E-survey
-                  </div>
-                  <div class="portfolio_item_link">
-                    <a href="#">See More</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_web">
-                <img src="~assets/images/ewsb.png" alt="">
-                <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                  <div class="portfolio_item_title">
-                    WSB
-                  </div>
-                  <div class="portfolio_item_link">
-                    <a href="#">See More</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_web">
-                <img src="~assets/images/tekfoods.png" alt="">
-                <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                  <div class="portfolio_item_title">
-                    TekFoods
-                  </div>
-                  <div class="portfolio_item_link">
-                    <a href="#">See More</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_web">
-                <img src="~assets/images/afrihit.jpg" alt="">
-                <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                  <div class="portfolio_item_title">
-                    AFRIHIT
-                  </div>
-                  <div class="portfolio_item_link">
-                    <a href="#">See More</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Portfolio Item -->
-              <div class="grid-item portfolio_item p_web">
-                <img src="~assets/images/ministere2.png" alt="">
-                <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                  <div class="portfolio_item_title">
-                    Project Management
-                  </div>
-                  <div class="portfolio_item_link">
-                    <a href="#">See More</a>
+                    <nuxt-link :to="portofolioPath+portofolio.id">
+                      See More
+                    </nuxt-link>
                   </div>
                 </div>
               </div>
@@ -167,18 +77,39 @@ export default {
     Footer,
     Generalnfo
   },
-  asyncData () {
-    return new Promise((resolve) => {
+  data () {
+    return {
+      portofolioPath: '/portofolio/'
+    }
+  },
+  async asyncData ({ error, $axios }) {
+    const data = await $axios.$get(`http://localhost:4000/api/v1/portofolio`)
+
+    if (data.success) {
+      return new Promise((resolve) => {
       // eslint-disable-next-line nuxt/no-timing-in-fetch-data
-      setTimeout(function () {
-        resolve({})
-      }, 1000)
-    })
+        setTimeout(function () {
+          resolve({ portofolios: data.data })
+        }, 1000)
+      })
+    } else {
+      // eslint-disable-next-line nuxt/no-this-in-fetch-data
+      error({ statusCode: 404, message: 'Portofolio not found' })
+    }
   },
   methods: {
     ...mapMutations({
       setActive: 'menu/setActive'
-    })
+    }),
+    checkObject (object) {
+      if (object === null) {
+        return false
+      }
+      return true
+    },
+    shortDesc (descriptions) {
+      return descriptions.substring(0, 125)
+    }
   },
   head () {
     return {

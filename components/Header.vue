@@ -10,7 +10,7 @@
         class="main_nav d-flex flex-row align-items-end justify-content-start"
       >
         <ul class="d-flex flex-row align-items-center justify-content-start">
-          <li v-for="menu in menus" :key="menu.key" :class="activeMenu == menu.key ? 'active' : ''">
+          <li v-for="menu in menus" :key="menu.key" :class="activeMenu == menu.key ? 'active' : ''" class="">
             <nuxt-link :to="menu.key">
               {{ menu.name }}
             </nuxt-link>
@@ -64,6 +64,7 @@ export default {
       return this.$store.state.menu.menus
     },
     activeMenu () {
+      // console.log(this.$store.state.menu.activeMenu)
       return this.$store.state.menu.activeMenu
     },
     isLogged () {

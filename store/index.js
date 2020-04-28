@@ -15,7 +15,10 @@ export const mutations = {
     state.sessionKey = ''
     state.isLogged = false
   }
-  // toggle (state, menu) {
-  //   menu.done = !menu.done
-  // },
+}
+
+export const actions = {
+  updatesession: ({ commit }, token) => {
+    commit('setSession', token)
+  }
 }

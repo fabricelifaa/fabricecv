@@ -1,6 +1,6 @@
 <template>
   <div class="super_container">
-    {{ setActive('skills') }}
+    {{ setActive('/skills') }}
     <!-- Header -->
     <Header />
     <div class="content_container">
@@ -26,7 +26,7 @@
                   <div class="row">
                     <div class="col-xl-12">
                       <p>
-                        Give satisfaction to people through my work. J'ai 2 ans d'experience en tant que developper back-end, pendant ces 2 ans j'ai pu acquerir grace à ma capacité à apprendre rapidement plus d'astuces pour parfaire mon travail et découvrir plein de nouvelle technologie.
+                        I have 2 years of experience as a back-end developer, during these 2 years I was able to acquire thanks to my ability to quickly learn more tips to perfect my work and discover a lot of new technologies.
                       </p>
                     </div>
                   </div>

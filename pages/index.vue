@@ -31,8 +31,8 @@
               </div>
               <div class="about_text">
                 <p>
-                  I am a back-end developer with a lot of experience in my ﬁeld and full of resources in Front-end and other areas of computer science.
-                  I have agreat spirit of creativity, dynamism and willingness to carry out the tasks entrusted to me inashort time. As hobbies I like video games, basketball, reading, movies, traveling, manga and especially music is essential 😉.
+                  I am a senior back-end developer with a 2 years of experience in my ﬁeld and full of resources in Front-end and other areas of computer science.
+                  I have agreat spirit of creativity, dynamism and willingness to carry out the tasks entrusted to me inashort time. My goal is give satisfaction to people through my work. As hobbies I like video games, basketball, reading, movies, traveling, manga and especially music is essential 😉.
                 </p>
               </div>
 

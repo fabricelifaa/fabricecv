@@ -1,7 +1,7 @@
 <template>
   <div class="super_container">
     <!-- Header -->
-    {{ setActive('portofolio') }}
+    {{ setActive('/portofolio') }}
     <Header />
 
     <div class="content_container">
@@ -122,7 +122,7 @@ export default {
   },
   // eslint-disable-next-line vue/order-in-components
   async asyncData ({ params, error, $axios }) {
-    const data = await $axios.$get(`http://64.227.43.157:4000/api/v1/portofolio/${params.id}`)
+    const data = await $axios.$get(`http://localhost:4000/api/v1/portofolio/${params.id}`)
     if (data.success) {
       return new Promise((resolve) => {
       // eslint-disable-next-line nuxt/no-timing-in-fetch-data

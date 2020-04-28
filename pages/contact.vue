@@ -1,7 +1,7 @@
 <template>
   <div class="super_container">
     <!-- Header -->
-    {{ setActive('contact') }}
+    {{ setActive('/contact') }}
     <Header />
     <div class="content_container">
       <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
@@ -12,7 +12,7 @@
         <div class="main_content">
           <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
             <div class="main_subtitle">
-              What clients say
+              Say me hello.
             </div>
             <div class="main_title">
               Contact me
@@ -27,7 +27,7 @@
                   <!-- Contact Form -->
                   <div class="col-xl-6">
                     <div class="contact_text">
-                      <p>Pour tout vos travaux de création de site web et besoins de developpeur back-end n'hésitéz pas a me contactez directement en remplissant le formulaire ci-dessous ou en écrivant sur mon mail ou numéro.</p>
+                      <p>For all your website creation work and back-end developer needs do not hesitate to contact me directly by filling out the form below or by writing on my email or number.</p>
                     </div>
                     <div class="contact_form_container">
                       <form id="contact_form" action="#" class="contact_form clearfix">

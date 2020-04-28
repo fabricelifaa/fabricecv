@@ -86,7 +86,7 @@ export default {
       loginErrorMsg: 'Connection failed check your login'
     }
   },
-  middleware: 'loginness',
+  // middleware: 'loginness',
   methods: {
     ...mapMutations({
       setActive: 'menu/setActive'
@@ -108,7 +108,8 @@ export default {
       })
         .then((response) => {
           if (response.data.status) {
-            this.$store.commit('setSession', response.data.token)
+            // this.$store.commit('setSession', response.data.token)
+            this.$store.dispatch('updatesession', response.data.token)
             this.$nuxt.$router.replace({ path: '/portofolio/new' })
           } else {
             this.loginError = true

@@ -1,7 +1,7 @@
 <template>
   <div class="super_container">
     <!-- Header -->
-    {{ setActive('experience') }}
+    {{ setActive('/experience') }}
     <Header />
 
     <div class="content_container">
