@@ -8,9 +8,7 @@
       <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
         <!-- General Information -->
         <Generalnfo />
-
         <!-- Main Content -->
-
         <div class="main_content">
           <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
             <!-- <div class="main_subtitle">
@@ -25,7 +23,7 @@
             <div class="testimonials">
               <!-- Testimonials Slider -->
               <client-only>
-                <div class="test_slider_container">
+                <div v-if="checkObject(portofolio.images)" class="test_slider_container">
                   <carousel
                     :autoplay="false"
                     :loop="true"
@@ -42,21 +40,9 @@
                     }"
                   >
                     <!-- Slide -->
-                    <div class="test_item">
-                      <div class="test_image">
-                        <img src="~assets/images/blank2.png">
-                      </div>
-                    </div>
-
-                    <div class="test_item">
-                      <div class="test_image">
-                        <img src="~assets/images/blank2.png">
-                      </div>
-                    </div>
-
-                    <div class="test_item">
-                      <div class="test_image">
-                        <img src="~assets/images/blank2.png">
+                    <div v-for="(image, index) in portofolio.images" :key="index" class="test_item">
+                      <div class="tst_image">
+                        <img :src="image">
                       </div>
                     </div>
                   </carousel>
@@ -72,8 +58,7 @@
               </div>
               <div class="description_text">
                 <p>
-                  I am a back-end developer with a lot of experience in my ﬁeld and full of resources in Front-end and other areas of computer science.
-                  I have agreat spirit of creativity, dynamism and willingness to carry out the tasks entrusted to me inashort time. As hobbies I like video games, basketball, reading, movies, traveling, manga and especially music is essential 😉.
+                  {{ portofolio.descriptions }}
                 </p>
               </div>
             </div>
@@ -104,10 +89,21 @@ export default {
   methods: {
     ...mapMutations({
       setActive: 'menu/setActive'
-    })
+    }),
+    checkObject (object) {
+      if (object === null) {
+        return false
+      }
+      return true
+    }
   },
   head () {
     return {
+      title: this.portofolio.title,
+      meta: [
+        { hid: 'keywords', name: 'keywords', content: 'Fabrice FABIYI portofolio, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
+        { hid: 'description', name: 'description', content: this.portofolio.descriptions }
+      ],
       script: [
         { src: '/js/jquery-3.2.1.min.js' },
         { src: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' },

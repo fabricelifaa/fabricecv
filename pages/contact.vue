@@ -93,6 +93,11 @@ export default {
   },
   head () {
     return {
+      title: 'Contact me',
+      meta: [
+        { hid: 'keywords', name: 'keywords', content: 'Fabrice FABIYI contact, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
+        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper contact page.' }
+      ],
       script: [
         { src: '/js/jquery-3.2.1.min.js' },
         { src: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' },

@@ -1,7 +1,7 @@
 <template>
   <div class="super_container">
     <!-- Header -->
-    {{ setActive('contact') }}
+    {{ setActive('/portofolio') }}
     <Header />
     <div class="content_container">
       <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
@@ -108,7 +108,6 @@ export default {
       })
         .then((response) => {
           if (response.data.status) {
-            // this.$store.commit('setSession', response.data.token)
             this.$store.dispatch('updatesession', response.data.token)
             this.$nuxt.$router.replace({ path: '/portofolio/new' })
           } else {

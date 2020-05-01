@@ -1,7 +1,7 @@
 <template>
   <div class="super_container">
     <!-- Header -->
-    {{ setActive('contact') }}
+    {{ setActive('/portofolio') }}
     <Header />
     <div class="content_container">
       <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
@@ -26,13 +26,8 @@
                   <!-- Contact Form -->
                   <div class="col-xl-6">
                     <transition name="fade" mode="out-in">
-                      <div id="error-container" v-bind:class="[portofolioError ? '' : 'd-none']" class="contact_text bg-danger text-center">
-                        <p>{{ portofolioErrorMsg }}</p>
-                      </div>
-                    </transition>
-                    <transition name="fade" mode="out-in">
-                      <div id="success-container" v-bind:class="[portofolioError ? '' : 'd-none']" class="contact_text bg-success text-center">
-                        <p>{{ portofolioErrorMsg }}</p>
+                      <div id="error-container" v-bind:class="[errorStatus ? '' : 'd-none']" class="contact_text bg-danger text-center">
+                        <p>{{ ErrorMsg }}</p>
                       </div>
                     </transition>
                     <div class="contact_form_container">
@@ -75,12 +70,10 @@
                             multiple
                             name="portofolio_images"
                           >
-                          <transition name="fade" mode="out-in">
-                            <div id="upload-error" v-bind:class="[uploadError ? '' : 'd-none']" class="text-danger">
-                              <p>{{ uploadErrorMsg }}</p>
-                            </div>
-                          </transition>
                         </div>
+                        <p>
+                          <span v-if="uploadspinner" class="loader" />
+                        </p>
                         <button @click="submitPortofolio" class="contact_button">
                           Add
                         </button>
@@ -98,6 +91,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import { mapMutations } from 'vuex'
 import Header from '@/components/Header'
@@ -117,12 +111,9 @@ export default {
       descriptions: '',
       files: '',
       portofolioType: '',
-      uploadErrorMsg: '',
-      uploadError: false,
-      portofolioError: false,
-      portofolioErrorMsg: '',
-      portofolioSuccessMsg: '',
-      portofolioSuccess: false,
+      errorStatus: false,
+      ErrorMsg: '',
+      uploadspinner: false,
       images: {}
     }
   },
@@ -139,17 +130,28 @@ export default {
     ...mapMutations({
       setActive: 'menu/setActive'
     }),
-    submitPortofolio (e) {
+    is_Empty (fields) {
+      fields.forEach((field) => {
+        if (!field) {
+          return false
+        }
+      })
+      return true
+    },
+    async submitPortofolio (e) {
       e.preventDefault()
-      if (this.title === '') {
-        this.portofolioError = true
-        this.portofolioErrorMsg = 'Error portofolio not submited'
+      this.errorStatus = false
+      const fields = [this.title, this.descriptions, this.portofolioType, this.images]
+      if (!this.is_Empty(fields)) {
+        this.errorStatus = true
+        this.ErrorMsg = 'Error verify the fields and retry!'
         setTimeout(function () {
-          this.portofolioError = false
+          this.errorStatus = false
         }, 5000)
+        return false
       }
       const getTokken = this.$store.state.sessionKey
-      this.$axios({
+      await this.$axios({
         url: 'http://localhost:4000/api/v1/portofolio/',
         method: 'post',
         data: {
@@ -163,33 +165,42 @@ export default {
         }
       }).then((response) => {
         if (response.data.status) {
-          this.portofolioSuccessMsg = 'Portofolio added successfully!'
-          this.portofolioSuccess = true
+          this.ErrorMsg = 'Portofolio added successfully!'
+          this.errorStatus = true
           setTimeout(function () {
-            this.portofolioSuccess = false
+            this.errorStatus = false
           }, 3000)
           this.resetData()
+        } else {
+          this.errorStatus = true
+          this.ErrorMsg = response.data.message
+          setTimeout(function () {
+            this.errorStatus = false
+          }, 3000)
+          return false
         }
       }).catch()
     },
     uploadFiles () {
       this.files = this.$refs.portofolio_images.files
+      this.errorStatus = false
+      this.uploadspinner = true
       if (this.files === '') {
-        this.uploadError = true
-        this.uploadErrorMsg = 'File not uploaded!'
+        this.errorStatus = true
+        this.ErrorMsg = 'File not uploaded!'
         this.$refs.portofolio_images.values = ''
         setTimeout(function () {
-          this.uploadError = false
+          this.errorStatus = false
         }, 3000)
         return
       }
-
       if (!this.check_files_ext(this.files)) {
-        this.uploadError = true
-        this.uploadErrorMsg = 'File not uploaded!'
+        this.errorStatus = true
+        this.ErrorMsg = 'File not uploaded!'
         this.$refs.portofolio_images.values = ''
         setTimeout(function () {
-          this.uploadError = false
+          this.errorStatus = false
+          this.uploadspinner = false
         }, 3000)
         return
       }
@@ -211,10 +222,21 @@ export default {
       ).then((response) => {
         if (response.data.success) {
           this.images = response.data.files
-          // this.resetData()
+          this.errorStatus = true
+          this.uploadspinner = false
+          this.ErrorMsg = 'File uploaded!'
+          setTimeout(function () {
+            this.errorStatus = false
+          }, 3000)
+        } else {
+          this.errorStatus = true
+          this.uploadspinner = false
+          this.ErrorMsg = 'File not uploaded!'
+          setTimeout(function () {
+            this.errorStatus = false
+          }, 3000)
         }
       }).catch()
-      // const porto = await this.$axios.$get(`http://64.227.43.157:4000/api/v1/portofolio/1`)
     },
     check_files_ext (files) {
       const re = new RegExp('(.*?)\\.(jpg|png)$')

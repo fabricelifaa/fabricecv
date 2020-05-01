@@ -40,7 +40,7 @@
           </div>
 
           <div class="main_content_scroll" data-mcs-theme="minimal-dark">
-            <div v-for="(portofolio) in portofolios" class="portfolio_grid grid clearfix">
+            <div v-for="(portofolio, index) in portofolios" :key="index" class="portfolio_grid grid clearfix">
               <!-- Portfolio Item -->
               <div :class="portofolio.portofolio_type" class="grid-item portfolio_item">
                 <img v-if="checkObject(portofolio.images)" :src="portofolio.images[0]" :alt="shortDesc(portofolio.descriptions) ">
@@ -113,6 +113,11 @@ export default {
   },
   head () {
     return {
+      title: 'Portofolio',
+      meta: [
+        { hid: 'keywords', name: 'keywords', content: 'Fabrice FABIYI Portofolio, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
+        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper portofolio page.' }
+      ],
       script: [
         { src: '/js/jquery-3.2.1.min.js' },
         { src: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' },
