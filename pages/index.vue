@@ -31,8 +31,8 @@
               </div>
               <div class="about_text">
                 <p>
-                  I am a back-end developer with a lot of experience in my ﬁeld and full of resources in Front-end and other areas of computer science.
-                  I have agreat spirit of creativity, dynamism and willingness to carry out the tasks entrusted to me inashort time. As hobbies I like video games, basketball, reading, movies, traveling, manga and especially music is essential 😉.
+                  I am a senior back-end developer with a 2 years of experience in my ﬁeld and full of resources in Front-end and other areas of computer science.
+                  I have agreat spirit of creativity, dynamism and willingness to carry out the tasks entrusted to me inashort time. My goal is give satisfaction to people through my work. As hobbies I like video games, basketball, reading, movies, traveling, manga and especially music is essential 😉.
                 </p>
               </div>
 
@@ -120,6 +120,11 @@ export default {
       }, 1000)
     })
   },
+  pageTransition: {
+    name: 'slide-left',
+    mode: 'in-out',
+    duration: 3000
+  },
   methods: {
     ...mapMutations({
       setActive: 'menu/setActive'
@@ -127,6 +132,11 @@ export default {
   },
   head () {
     return {
+      title: 'About',
+      meta: [
+        { hid: 'keywords', name: 'keywords', content: 'Fabrice FABIYI about, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
+        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper about page.' }
+      ],
       script: [
         { src: '/js/jquery-3.2.1.min.js' },
         { src: '/plugins/greensock/TweenMax.min.js' },

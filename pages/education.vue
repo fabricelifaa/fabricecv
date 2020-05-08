@@ -1,7 +1,7 @@
 <template>
   <div class="super_container">
     <!-- Header -->
-    {{ setActive('education') }}
+    {{ setActive('/education') }}
     <Header />
     <div class="content_container">
       <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
@@ -114,7 +114,7 @@
               My Certifications
             </div>
             <p class="notice-msg">
-              <span>*</span> Copier et coller mon nom dans le champs demander par openclassroom afin d'affiché le certificat. Cliquer ici pour Copier <span id="copy_name" @click="copyToClipboard">Fabiyi</span>
+              <span>*</span> Copy and paste my name into the openclassroom request field to display the certificate. Click here to Copy <span id="copy_name" @click="copyToClipboard">Fabiyi</span>
               <input id="textcopied" type="hidden" value="">
             </p>
           </div>
@@ -240,7 +240,7 @@
 </template>
 <script>
 import { mapMutations } from 'vuex'
-import $ from 'jquery'
+// import $ from 'jquery'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Generalnfo from '@/components/Generalnfo'
@@ -264,17 +264,23 @@ export default {
     ...mapMutations({
       setActive: 'menu/setActive'
     }),
-    copyToClipboard: () => {
-      $('#textcopied').val($('#copy_name').text())
-      const copiedText = document.getElementById('textcopied')
+    copyToClipboard: (e) => {
+      e.preventDefault()
+      // $('#textcopied').val($('#copy_name').text())
+      const copiedText = document.getElementById('copy_name')
       copiedText.select()
       // copiedText.setSelectionRange(0, 99999)
       document.execCommand('copy')
-      alert(copiedText.value)
+      // alert(copiedText.value)
     }
   },
   head () {
     return {
+      title: 'Education',
+      meta: [
+        { hid: 'keywords', name: 'keywords', content: 'Fabrice FABIYI Education, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
+        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper education page.' }
+      ],
       script: [
         { src: '/js/jquery-3.2.1.min.js' },
         { src: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' },

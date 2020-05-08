@@ -18,7 +18,7 @@ export const state = () => ({
     },
     {
       name: 'Portofolio',
-      key: '/portofolio'
+      key: '/portofolios'
     },
     {
       name: 'Contact',

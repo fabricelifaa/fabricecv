@@ -4,16 +4,21 @@
       class="header_content d-flex flex-row align-items-center justify-content-start"
     >
       <div class="logo">
-        Fabroot<span>dev</span>
+        Fabroot<span class="dev">dev</span>
       </div>
       <div
         class="main_nav d-flex flex-row align-items-end justify-content-start"
       >
         <ul class="d-flex flex-row align-items-center justify-content-start">
-          <li v-for="menu in menus" :key="menu.key" :class="activeMenu == menu.key ? 'active' : ''">
+          <li v-for="menu in menus" :key="menu.key" :class="activeMenu == menu.key ? 'active' : ''" class="">
             <nuxt-link :to="menu.key">
               {{ menu.name }}
             </nuxt-link>
+          </li>
+          <li v-if="isLogged">
+            <a @click="logoutAdmin" href="#">
+              {{ logoutRoute.name }}
+            </a>
           </li>
         </ul>
         <div class="header_button ml-auto">
@@ -40,6 +45,11 @@
                   {{ menu.name }}
                 </nuxt-link>
               </li>
+              <li v-if="isLogged">
+                <a @click="logoutAdmin" href="#">
+                  {{ logoutRoute.name }}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -54,7 +64,20 @@ export default {
       return this.$store.state.menu.menus
     },
     activeMenu () {
+      // console.log(this.$store.state.menu.activeMenu)
       return this.$store.state.menu.activeMenu
+    },
+    isLogged () {
+      return this.$store.state.isLogged
+    },
+    logoutRoute () {
+      return this.$store.state.logoutRoute
+    }
+  },
+  methods: {
+    logoutAdmin () {
+      this.$store.commit('removeSession')
+      this.$nuxt.$router.replace({ path: '/' })
     }
   }
 }

@@ -1,9 +1,6 @@
 export const state = () => ({
   isLogged: false,
-  sessionKey: '',
-  logoutRoute: {
-    name: 'Logout'
-  }
+  sessionKey: ''
 })
 
 export const mutations = {
@@ -15,10 +12,7 @@ export const mutations = {
     state.sessionKey = ''
     state.isLogged = false
   }
-}
-
-export const actions = {
-  updatesession: ({ commit }, token) => {
-    commit('setSession', token)
-  }
+  // toggle (state, menu) {
+  //   menu.done = !menu.done
+  // },
 }

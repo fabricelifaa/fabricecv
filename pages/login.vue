@@ -1,7 +1,7 @@
 <template>
   <div class="super_container">
     <!-- Header -->
-    {{ setActive('contact') }}
+    {{ setActive('/portofolio') }}
     <Header />
     <div class="content_container">
       <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
@@ -29,11 +29,17 @@
                     <div class="contact_text">
                       <p>Connection au compte admin</p>
                     </div>
+                    <transition name="fade" mode="out-in">
+                      <div id="error-container" v-bind:class="[loginError ? '' : 'd-none']" class="contact_text bg-danger text-center">
+                        <p>{{ loginErrorMsg }}</p>
+                      </div>
+                    </transition>
                     <div class="contact_form_container">
                       <form id="contact_form" @submit="submitform" class="contact_form clearfix">
                         <div>
                           <input
                             id="username"
+                            @change="hideErrorContainer"
                             v-model="username"
                             type="text"
                             class="contact_input"
@@ -45,7 +51,6 @@
                           Login
                         </button>
                       </form>
-                      {{ test }}
                     </div>
                   </div>
                 </div>
@@ -61,7 +66,7 @@
 </template>
 <script>
 import { mapMutations } from 'vuex'
-// import $ from 'jquery'
+import $ from 'jquery'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Generalnfo from '@/components/Generalnfo'
@@ -76,16 +81,42 @@ export default {
   data () {
     return {
       username: '',
-      pass: null
+      pass: null,
+      loginError: false,
+      loginErrorMsg: 'Connection failed check your login'
     }
   },
+  // middleware: 'loginness',
   methods: {
     ...mapMutations({
       setActive: 'menu/setActive'
     }),
-    submitform: (e) => {
+    hideErrorContainer () {
+      $('#error-container').addClass('d-none')
+    },
+    async submitform (e) {
       e.preventDefault()
-      alert(this.test)
+      await this.$axios({
+        url: 'http://64.227.43.157:4000/api/v1/login',
+        method: 'post',
+        data: {
+          username: this.username,
+          password: this.pass
+        },
+        withCredentials: false,
+        headers: { 'Access-Control-Allow-Origin': '*' }
+      })
+        .then((response) => {
+          if (response.data.status) {
+            this.$store.dispatch('updatesession', response.data.token)
+            this.$nuxt.$router.replace({ path: '/portofolio/new' })
+          } else {
+            this.loginError = true
+            setTimeout(() => {
+              this.loginError = false
+            }, 5000)
+          }
+        })
     }
   },
   head () {
