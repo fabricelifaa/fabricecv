@@ -4,7 +4,7 @@
       class="header_content d-flex flex-row align-items-center justify-content-start"
     >
       <div class="logo">
-        Fabroot<span class="dev">dev</span>
+        Fab<span class="dev">2</span>dev
       </div>
       <div
         class="main_nav d-flex flex-row align-items-end justify-content-start"
@@ -22,7 +22,7 @@
           </li>
         </ul>
         <div class="header_button ml-auto">
-          <a href="#">Available for freelance work</a>
+          <a href="https://www.upwork.com/o/profiles/users/~0176a56b97b3f11956/" target="_blank">Available for freelance work</a>
           <div
             class="d-flex flex-column align-items-center justify-content-center"
           >

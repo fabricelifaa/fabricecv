@@ -6,7 +6,7 @@
           class="background_image"
         />
         <div class="header_button_2">
-          <a href="#">Available for freelance work</a>
+          <a href="https://www.upwork.com/o/profiles/users/~0176a56b97b3f11956/" target="_blank">Available for freelance work</a>
           <div
             class="d-flex flex-column align-items-center justify-content-center"
           >
@@ -94,12 +94,12 @@
             <div
               class="general_info_icon d-flex flex-column align-items-start justify-content-center"
             >
-              <img src="~assets/images/icon_5.png" alt="">
+              <img src="~assets/images/icon_3.png" alt="">
             </div>
             <div class="general_info_text">
               <a
-                href="mailto:contact@fabrootdev.com"
-              >www.fabrootdev.com</a>
+                href="mailto:contact@fab2dev.com"
+              >contact@fab2dev.com</a>
             </div>
           </li>
         </ul>
@@ -112,16 +112,19 @@
             <li>
               <a
                 href="https://github.com/fabricelifaa"
+                target="_blank"
               ><i class="fa fa-github" aria-hidden="true" /></a>
             </li>
             <li>
               <a
                 href="https://stackoverflow.com/users/10085581/fabrice-fabiyi"
+                target="_blank"
               ><i class="fa fa-stack-overflow" aria-hidden="true" /></a>
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/fabrice-fabiyi-171b38119"
+                target="_blank"
               ><i class="fa fa-linkedin" aria-hidden="true" /></a>
             </li>
             <li>

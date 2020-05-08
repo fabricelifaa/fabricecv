@@ -28,6 +28,7 @@
     "jquery": "^3.4.1",
     "nuxt": "^2.0.0",
     "pg": "^7.18.1",
+    "redirect-ssl": "^1.4.1",
     "stylelint-config-standard": "^19.0.0",
     "v-owl-carousel": "^1.0.8",
     "vue-clipboard2": "^0.3.1",

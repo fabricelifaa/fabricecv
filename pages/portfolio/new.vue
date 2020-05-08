@@ -1,7 +1,7 @@
 <template>
   <div class="super_container">
     <!-- Header -->
-    {{ setActive('/portofolio') }}
+    {{ setActive('/portfolio') }}
     <Header />
     <div class="content_container">
       <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
@@ -72,7 +72,7 @@
                           >
                         </div>
                         <p>
-                          <span v-if="uploadspinner" class="loader" />
+                          <span v-if="uploadspinner" class="upload_loader" />
                         </p>
                         <button @click="submitPortofolio" class="contact_button">
                           Add

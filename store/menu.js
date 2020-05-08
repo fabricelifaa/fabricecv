@@ -17,8 +17,8 @@ export const state = () => ({
       key: '/education'
     },
     {
-      name: 'Portofolio',
-      key: '/portofolios'
+      name: 'Portfolio',
+      key: '/portfolios'
     },
     {
       name: 'Contact',

@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 <template>
   <div class="super_container">
     <!-- Header -->
@@ -40,7 +41,15 @@
                     </div>
                   </div>
                   <div class="exp_text">
-                    <p>J'ai eu à développer plusieurs plugins et api wordpress, j'ai aussi travaillé en groupe avec d'autres développeur pour la mise en place d'une API de gestion de campagne par sms basée sur nodejs et vuejs pour l'interface d'administration, J'ai aussi eu à apporter des modifications sur plusieurs des applications Web à l'aide de vuejs.</p>
+                    <p>
+                      <ul>
+                        <li>Realization of Wordpress plugin in order to manage the jobs and news of the Blank Page project of MTN BENIN.</li>
+                        <li>Realization of Wordpress plugin in order to manage some demand of the FRESH application of MTN BENIN.</li>
+                        <li>Realization of the web platform of the E-survey project of MTN BENIN with technologies such as PHP, Postgresql.</li>
+                        <li>Realization of the web platform and the API of Kamgoko’s WSB project using technologies such as NodeJS, PHP, Postgresql.</li>
+                        <li>Realization of a Wordpress page builder in order to manage the update of the theme of the MTN BENIN website.</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -62,7 +71,13 @@
                     </div>
                   </div>
                   <div class="exp_text">
-                    <p>J'ai créer une apllication web pour la gestion des rapports de chaque semaine. J'ai aussi réalisé quelque cover pour les évenements annexes du ministère (eco-citoyens) à l'aide de inkscape. J'ai aussi assisté au déploiement d'interphone cisco.</p>
+                    <p>
+                      <ul>
+                        <li>Realization of covers for an eco-citizen project with inkscape, the free graphics software under Linux.</li>
+                        <li>Creation of a website coded in HTML CSS and PHP to solve an internal need within the department.</li>
+                        <li>Participation in the Cisco intercom deployment project.</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -80,11 +95,16 @@
                       Webmaster (remote)
                     </div>
                     <div class="exp_subtitle">
-                      Afrihit group
+                      76 com group
                     </div>
                   </div>
                   <div class="exp_text">
-                    <p>J'ai refait le site Afrihit avec php pour gérer les téléchargements de musique, j'ai aussi fait certains des covers utilisé sur le site Afrihit.</p>
+                    <p>
+                      <ul>
+                        <li>Management and updating of the Afrihit website.</li>
+                        <li>Realization of logo and cover for 7 6 com.</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -106,7 +126,11 @@
                     </div>
                   </div>
                   <div class="exp_text">
-                    <p>I implemented a web platform to display data that will be transmitted by sensor swith the Flask framework.</p>
+                    <p>
+                      <ul>
+                        <li>Implementation of a Web platform to display data that will be transmitted by sensors with the Flask framework.</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>
               </div>
