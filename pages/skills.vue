@@ -63,7 +63,7 @@
                         <div
                           id="skill_2_pbar"
                           class="skill_bars"
-                          data-perc="0.75"
+                          data-perc="0.80"
                           data-name="skill_2_pbar"
                           data-color-start="#ff4646"
                           data-color-end="#ff26d9"
@@ -97,7 +97,7 @@
                         <div
                           id="skill_4_pbar"
                           class="skill_bars"
-                          data-perc="0.45"
+                          data-perc="0.5"
                           data-name="skill_4_pbar"
                           data-color-start="#79ff7c"
                           data-color-end="#ffbd4a"
@@ -114,7 +114,7 @@
                         <div
                           id="skill_5_pbar"
                           class="skill_bars"
-                          data-perc="0.60"
+                          data-perc="0.68"
                           data-name="skill_5_pbar"
                           data-color-start="#79ff8f"
                           data-color-end="#7b74ff"
@@ -172,6 +172,23 @@
                         />
                       </div>
                     </div>
+
+                    <!-- Progress Bar -->
+                    <div class="col-xl-4 col-lg-6 pb_col">
+                      <div class="pb_item">
+                        <div class="p_bar_title">
+                          Framework 7
+                        </div>
+                        <div
+                          id="skill_9_pbar"
+                          class="skill_bars"
+                          data-perc="0.8"
+                          data-name="skill_9_pbar"
+                          data-color-start="#79ff7c"
+                          data-color-end="#ffbd4a"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -214,10 +231,14 @@ export default {
   },
   head () {
     return {
-      title: 'Skills',
+      title: 'Fabrice FABIYI - Skills',
       meta: [
         { hid: 'keywords', name: 'keywords', content: 'Fabrice FABIYI Skills, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
-        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper skills page.' }
+        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper skills page.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://fab2dev.com/skills/' },
+        { property: 'og:description', content: 'Fabrice FABIYI Back-end developper skills page.' },
+        { property: 'og:image', content: '/icon.png' }
       ],
       script: [
         { src: '/js/jquery-3.2.1.min.js' },

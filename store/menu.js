@@ -17,13 +17,13 @@ export const state = () => ({
       key: '/education'
     },
     {
-      name: 'Portofolio',
-      key: '/portofolios'
-    },
-    {
-      name: 'Contact',
-      key: '/contact'
+      name: 'Portfolio',
+      key: '/portfolios'
     }
+    // {
+    //   name: 'Contact',
+    //   key: '/contact'
+    // }
   ],
   activeMenu: ''
 })

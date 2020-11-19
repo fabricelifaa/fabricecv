@@ -693,10 +693,10 @@ section
 {
 	width: 100%;
 	background: #f7f8fc;
-	padding-top: 74px;
+	/* padding-top: 74px; */
 	padding-bottom: 74px;
-	padding-left: 46px;
-	padding-right: 40px;
+	/* padding-left: 46px; */
+	/* padding-right: 40px; */
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;

@@ -132,10 +132,14 @@ export default {
   },
   head () {
     return {
-      title: 'About',
+      title: 'Fabrice FABIYI - About',
       meta: [
-        { hid: 'keywords', name: 'keywords', content: 'Fabrice FABIYI about, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
-        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper about page.' }
+        { hid: 'keywords', name: 'keywords', content: 'Fabrice FABIYI about, Wordpress developer, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
+        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper about page.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://fab2dev.com/' },
+        { property: 'og:description', content: 'Fabrice FABIYI Back-end developper. Passionate about the new techniques of the web, I am looking to improve my techniques and discover new ones' },
+        { property: 'og:image', content: '/icon.png' }
       ],
       script: [
         { src: '/js/jquery-3.2.1.min.js' },

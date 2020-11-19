@@ -20,7 +20,7 @@
 import '@/assets/styles/error.css'
 export default {
   // eslint-disable-next-line vue/require-prop-types
-  props: [ 'error' ],
+  props: ['error'],
   methods: {
     checkstatus: (status) => {
       let temp = false

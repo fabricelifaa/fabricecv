@@ -114,8 +114,8 @@
               My Certifications
             </div>
             <p class="notice-msg">
-              <span>*</span> Copy and paste my name into the openclassroom request field to display the certificate. Click here to Copy <span id="copy_name" @click="copyToClipboard">Fabiyi</span>
-              <input id="textcopied" type="hidden" value="">
+              <span>*</span> Copy and paste my name into the openclassroom request field to display the certificate. Click here to Copy <span id="copy_name" @click="copyToClipboard">Fabrice</span>
+              <input id="textcopied" type="text" value="Fabrice" style='border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;'>
             </p>
           </div>
           <div class="main_content_scroll" data-mcs-theme="minimal-dark">
@@ -145,6 +145,33 @@
                   </div>
                   <div class="edu_text">
                     <p><a href="https://openclassrooms.com/fr/course-certificates/1513349388" target="_blank">View certificate</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- certifications Item -->
+              <div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
+                <div>
+                  <div class="edu_year">
+                    2019
+                  </div>
+                </div>
+                <div>
+                  <div class="edu_image">
+                    <img src="~assets/images/OpenClassrooms.png" alt="openclassroom logo">
+                  </div>
+                </div>
+                <div class="edu_content">
+                  <div class="edu_title_container">
+                    <div class="edu_title">
+                      OPENCLASSROOM
+                    </div>
+                    <div class="edu_subtitle">
+                      NodeJS
+                    </div>
+                  </div>
+                  <div class="edu_text">
+                    <p><a href="https://openclassrooms.com/fr/course-certificates/8040365240" target="_blank">View certificate</a></p>
                   </div>
                 </div>
               </div>
@@ -240,7 +267,7 @@
 </template>
 <script>
 import { mapMutations } from 'vuex'
-// import $ from 'jquery'
+//import $ from 'jquery'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Generalnfo from '@/components/Generalnfo'
@@ -267,10 +294,20 @@ export default {
     copyToClipboard: (e) => {
       e.preventDefault()
       // $('#textcopied').val($('#copy_name').text())
-      const copiedText = document.getElementById('copy_name')
+      const copiedText = document.getElementById('textcopied')
       copiedText.select()
-      // copiedText.setSelectionRange(0, 99999)
-      document.execCommand('copy')
+      try {
+            document.execCommand('copy');
+            navigator.vibrate([500]);
+            document.getElementById("copy_name").innerHTML = 'copied'
+        } catch (err) {
+            
+            alert('Not copied!');
+            
+        } finally {
+            
+        }
+      // document.execCommand('copy')
       // alert(copiedText.value)
     }
   },
@@ -279,7 +316,11 @@ export default {
       title: 'Education',
       meta: [
         { hid: 'keywords', name: 'keywords', content: 'Fabrice FABIYI Education, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
-        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper education page.' }
+        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper education page.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://fab2dev.com/education/' },
+        { property: 'og:description', content: 'Fabrice FABIYI Back-end developper education page.' },
+        { property: 'og:image', content: '/icon.png' }
       ],
       script: [
         { src: '/js/jquery-3.2.1.min.js' },

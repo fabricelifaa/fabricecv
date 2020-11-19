@@ -1,7 +1,7 @@
 <template>
   <div class="super_container">
     <!-- Header -->
-    {{ setActive('/portofolio') }}
+    {{ setActive('/portfolios') }}
     <Header />
 
     <div class="content_container">
@@ -40,9 +40,9 @@
           </div>
 
           <div class="main_content_scroll" data-mcs-theme="minimal-dark">
-            <div v-for="(portofolio, index) in portofolios" :key="index" class="portfolio_grid grid clearfix">
+            <div class="portfolio_grid grid clearfix">
               <!-- Portfolio Item -->
-              <div :class="portofolio.portofolio_type" class="grid-item portfolio_item">
+              <div v-for="(portofolio, index) in portofolios" :key="index" :class="portofolio.portofolio_type" class="grid-item portfolio_item">
                 <img v-if="checkObject(portofolio.images)" :src="portofolio.images[0]" :alt="shortDesc(portofolio.descriptions) ">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="portfolio_item_title">
@@ -79,11 +79,11 @@ export default {
   },
   data () {
     return {
-      portofolioPath: '/portofolio/'
+      portofolioPath: '/portfolio/'
     }
   },
   async asyncData ({ error, $axios }) {
-    const data = await $axios.$get(`http://64.227.43.157:4000/api/v1/portofolio`)
+    const data = await $axios.$get('https://fab2dev.com:4000/api/v1/portofolio')
 
     if (data.success) {
       return new Promise((resolve) => {
@@ -113,10 +113,14 @@ export default {
   },
   head () {
     return {
-      title: 'Portofolio',
+      title: 'Fabrice FABIYI - Portofolio',
       meta: [
-        { hid: 'keywords', name: 'keywords', content: 'Fabrice FABIYI Portofolio, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
-        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper portofolio page.' }
+        { hid: 'keywords', name: 'keywords', content: 'Wordpress developer, Fabrice FABIYI Portofolio, Developer Back-end, Fabrice FABIYI, FABIYI Portofolio, Portofolio Website, Hire Freelancer, Website Freelancer, Back-end developper skills' },
+        { hid: 'description', name: 'description', content: 'Fabrice FABIYI Back-end developper portofolio page.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://fab2dev.com/portfolios/' },
+        { property: 'og:description', content: 'Fabrice FABIYI Back-end developper portofolio page.' },
+        { property: 'og:image', content: '/icon.png' }
       ],
       script: [
         { src: '/js/jquery-3.2.1.min.js' },

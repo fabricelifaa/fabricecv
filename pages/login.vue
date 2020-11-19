@@ -97,7 +97,7 @@ export default {
     async submitform (e) {
       e.preventDefault()
       await this.$axios({
-        url: 'http://64.227.43.157:4000/api/v1/login',
+        url: 'https://fab2dev.com:4000/api/v1/login',
         method: 'post',
         data: {
           username: this.username,
@@ -109,7 +109,8 @@ export default {
         .then((response) => {
           if (response.data.status) {
             this.$store.dispatch('updatesession', response.data.token)
-            this.$nuxt.$router.replace({ path: '/portofolio/new' })
+            sessionStorage.setItem("fabSession", "Fabrice_FABIYI");
+            this.$nuxt.$router.replace({ path: '/portfolio/new' })
           } else {
             this.loginError = true
             setTimeout(() => {

@@ -25,7 +25,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: 'plugins/localStorage.js', ssr: false },
+    // { src: 'plugins/localStorage.js', ssr: false }, //
     { src: 'plugins/owl.js', mode: 'client' }
   ],
   /*
@@ -52,16 +52,7 @@ module.exports = {
     '@nuxtjs/dotenv'
   ],
   // serverMiddleware: [
-  //   // session middleware
-  //   session({
-  //     secret: 'super-secret-key',
-  //     resave: false,
-  //     saveUninitialized: false,
-  //     cookie: {
-  //       maxAge: 60000
-  //     }
-  //   }),
-  //   '~/api'
+  //   'redirect-ssl'
   // ],
   /*
    ** Axios module configuration

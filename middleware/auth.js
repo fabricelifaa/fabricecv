@@ -1,6 +1,7 @@
 export default function ({ store, redirect }) {
   // Si l'utilisateur n'est pas authentifié
-  if (!store.state.isLogged) {
-    return redirect('/login')
-  }
+  let session =  sessionStorage.getItem("fabSession");
+  // console.log(session)
+  if (session == '' || session == null) return redirect('/login');
+    
 }
