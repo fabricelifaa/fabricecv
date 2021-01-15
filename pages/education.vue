@@ -115,7 +115,7 @@
             </div>
             <p class="notice-msg">
               <span>*</span> Copy and paste my name into the openclassroom request field to display the certificate. Click here to Copy <span id="copy_name" @click="copyToClipboard">Fabrice</span>
-              <input id="textcopied" type="text" value="Fabrice" style='border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;'>
+              <input id="textcopied" type="text" value="Fabrice" style="border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;">
             </p>
           </div>
           <div class="main_content_scroll" data-mcs-theme="minimal-dark">
@@ -267,7 +267,6 @@
 </template>
 <script>
 import { mapMutations } from 'vuex'
-//import $ from 'jquery'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Generalnfo from '@/components/Generalnfo'
@@ -281,7 +280,6 @@ export default {
   },
   asyncData () {
     return new Promise((resolve) => {
-      // eslint-disable-next-line nuxt/no-timing-in-fetch-data
       setTimeout(function () {
         resolve({})
       }, 1000)
@@ -297,16 +295,13 @@ export default {
       const copiedText = document.getElementById('textcopied')
       copiedText.select()
       try {
-            document.execCommand('copy');
-            navigator.vibrate([500]);
-            document.getElementById("copy_name").innerHTML = 'copied'
-        } catch (err) {
-            
-            alert('Not copied!');
-            
-        } finally {
-            
-        }
+        document.execCommand('copy')
+        navigator.vibrate([500])
+        document.getElementById('copy_name').innerHTML = 'copied'
+      } catch (err) {
+        alert('Not copied!')
+      } finally {
+      }
       // document.execCommand('copy')
       // alert(copiedText.value)
     }

@@ -87,13 +87,11 @@ export default {
 
     if (data.success) {
       return new Promise((resolve) => {
-      // eslint-disable-next-line nuxt/no-timing-in-fetch-data
         setTimeout(function () {
           resolve({ portofolios: data.data })
         }, 1000)
       })
     } else {
-      // eslint-disable-next-line nuxt/no-this-in-fetch-data
       error({ statusCode: 404, message: 'Portofolio not found' })
     }
   },

@@ -125,15 +125,14 @@ export default {
     const data = await $axios.$get(`https://fab2dev.com:4000/api/v1/portofolio/${params.id}`)
     if (data.success) {
       return new Promise((resolve) => {
-      // eslint-disable-next-line nuxt/no-timing-in-fetch-data
         setTimeout(function () {
-          resolve({ portofolio: data.data,
+          resolve({
+            portofolio: data.data,
             post_id: params.id
-           })
+          })
         }, 1000)
       })
     } else {
-      // eslint-disable-next-line nuxt/no-this-in-fetch-data
       error({ statusCode: 404, message: 'Portofolio not found' })
     }
   }

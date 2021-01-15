@@ -26,7 +26,7 @@
                   <!-- Contact Form -->
                   <div class="col-xl-6">
                     <transition name="fade" mode="out-in">
-                      <div id="error-container" v-bind:class="[errorStatus ? '' : 'd-none']" class="contact_text bg-danger text-center">
+                      <div id="error-container" :class="[errorStatus ? '' : 'd-none']" class="contact_text bg-danger text-center">
                         <p>{{ ErrorMsg }}</p>
                       </div>
                     </transition>
@@ -62,19 +62,19 @@
                         <div>
                           <input
                             ref="portofolio_images"
-                            @change="uploadFiles"
                             type="file"
                             class="contact_input"
                             placeholder="Files"
                             required="required"
                             multiple
                             name="portofolio_images"
+                            @change="uploadFiles"
                           >
                         </div>
                         <p>
                           <span v-if="uploadspinner" class="upload_loader" />
                         </p>
-                        <button @click="submitPortofolio" class="contact_button">
+                        <button class="contact_button" @click="submitPortofolio">
                           Add
                         </button>
                       </form>
@@ -119,7 +119,6 @@ export default {
   },
   asyncData () {
     return new Promise((resolve) => {
-      // eslint-disable-next-line nuxt/no-timing-in-fetch-data
       setTimeout(function () {
         resolve({})
       }, 1000)

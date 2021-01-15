@@ -30,20 +30,20 @@
                       <p>Connection au compte admin</p>
                     </div>
                     <transition name="fade" mode="out-in">
-                      <div id="error-container" v-bind:class="[loginError ? '' : 'd-none']" class="contact_text bg-danger text-center">
+                      <div id="error-container" :class="[loginError ? '' : 'd-none']" class="contact_text bg-danger text-center">
                         <p>{{ loginErrorMsg }}</p>
                       </div>
                     </transition>
                     <div class="contact_form_container">
-                      <form id="contact_form" @submit="submitform" class="contact_form clearfix">
+                      <form id="contact_form" class="contact_form clearfix" @submit="submitform">
                         <div>
                           <input
                             id="username"
-                            @change="hideErrorContainer"
                             v-model="username"
                             type="text"
                             class="contact_input"
                             placeholder="Username"
+                            @change="hideErrorContainer"
                           >
                         </div>
                         <div><input v-model="pass" type="password" class="contact_input" placeholder="Password"></div>
@@ -109,7 +109,7 @@ export default {
         .then((response) => {
           if (response.data.status) {
             this.$store.dispatch('updatesession', response.data.token)
-            sessionStorage.setItem("fabSession", "Fabrice_FABIYI");
+            sessionStorage.setItem('fabSession', 'Fabrice_FABIYI')
             this.$nuxt.$router.replace({ path: '/portfolio/new' })
           } else {
             this.loginError = true

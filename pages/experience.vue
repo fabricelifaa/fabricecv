@@ -28,7 +28,7 @@
               <div class="exp_item d-flex flex-md-row flex-column align-items-start justify-content-start">
                 <div>
                   <div class="exp_time">
-                    03 / 2019 - Present
+                    03 / 2019 - 10 / 2020
                   </div>
                 </div>
                 <div class="exp_content">
@@ -158,7 +158,6 @@ export default {
   },
   asyncData () {
     return new Promise((resolve) => {
-      // eslint-disable-next-line nuxt/no-timing-in-fetch-data
       setTimeout(function () {
         resolve({})
       }, 1000)
