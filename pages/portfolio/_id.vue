@@ -109,15 +109,9 @@ export default {
         { property: 'og:image', content: '/icon.png' }
       ],
       script: [
-        { src: '/js/jquery-3.2.1.min.js' },
-        { src: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' },
-        { src: '/plugins/easing/easing.js' },
-        { src: '/plugins/parallax-js-master/parallax.min.js' },
         { src: '/js/testimonials.js' }
       ],
-      link: [
-        { rel: 'stylesheet', href: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css' }
-      ]
+      link: []
     }
   },
   // eslint-disable-next-line vue/order-in-components

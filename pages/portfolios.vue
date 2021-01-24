@@ -43,7 +43,7 @@
             <div class="portfolio_grid grid clearfix">
               <!-- Portfolio Item -->
               <div v-for="(portofolio, index) in portofolios" :key="index" :class="portofolio.portofolio_type" class="grid-item portfolio_item">
-                <img v-if="checkObject(portofolio.images)" :src="portofolio.images[0]" :alt="shortDesc(portofolio.descriptions) ">
+                <img v-if="checkObject(portofolio.images)" :src="portofolio.images[0]" :alt="shortDesc(portofolio.descriptions)">
                 <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
                   <div class="portfolio_item_title">
                     {{ portofolio.title }}
@@ -106,7 +106,7 @@ export default {
       return true
     },
     shortDesc (descriptions) {
-      return descriptions.substring(0, 125)
+      return `${descriptions.substring(0, 125)} ...`
     }
   },
   head () {
@@ -121,17 +121,12 @@ export default {
         { property: 'og:image', content: '/icon.png' }
       ],
       script: [
-        { src: '/js/jquery-3.2.1.min.js' },
-        { src: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' },
-        { src: '/plugins/easing/easing.js' },
+        { src: '/plugins/progressbar/progressbar.js' },
         { src: '/plugins/Isotope/isotope.pkgd.min.js' },
         { src: '/plugins/Isotope/fitcolumns.js' },
-        { src: '/plugins/parallax-js-master/parallax.min.js' },
         { src: '/js/portfolio.js' }
       ],
-      link: [
-        { rel: 'stylesheet', href: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css' }
-      ]
+      link: []
     }
   }
 }

@@ -240,21 +240,15 @@ export default {
         { property: 'og:image', content: '/icon.png' }
       ],
       script: [
-        { src: '/js/jquery-3.2.1.min.js' },
         { src: '/plugins/greensock/TweenMax.min.js' },
         { src: '/plugins/greensock/TimelineMax.min.js' },
         { src: '/plugins/scrollmagic/ScrollMagic.min.js' },
         { src: '/plugins/greensock/animation.gsap.min.js' },
         { src: '/plugins/greensock/ScrollToPlugin.min.js' },
         { src: '/plugins/progressbar/progressbar.js' },
-        { src: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' },
-        { src: '/plugins/easing/easing.js' },
-        { src: '/plugins/parallax-js-master/parallax.min.js' },
         { src: '/js/skills.js' }
       ],
-      link: [
-        { rel: 'stylesheet', href: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css' }
-      ]
+      link: []
     }
   }
 }

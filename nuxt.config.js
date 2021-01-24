@@ -10,7 +10,16 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
+      { rel: 'stylesheet', href: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css' }
+    ],
+    script:[
+      { src: '/js/jquery-3.2.1.min.js' },
+      { src: '/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js' },
+      { src: '/plugins/easing/easing.js' },
+      { src: '/plugins/parallax-js-master/parallax.min.js' },
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -19,8 +28,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [
-  ],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */

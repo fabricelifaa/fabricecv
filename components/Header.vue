@@ -16,7 +16,7 @@
             </nuxt-link>
           </li>
           <li v-if="isLogged">
-            <a @click="logoutAdmin" href="#">
+            <a href="#" @click="logoutAdmin">
               {{ logoutRoute.name }}
             </a>
           </li>
@@ -46,7 +46,7 @@
                 </nuxt-link>
               </li>
               <li v-if="isLogged">
-                <a @click="logoutAdmin" href="#">
+                <a href="#" @click="logoutAdmin">
                   {{ logoutRoute.name }}
                 </a>
               </li>
